@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>PPC Marketing Company | Google AdWords company in Delhi</title>
+<meta name="description" content="Attract more potential customers to your website by using PPC advertising services. We are the Google AdWords services provider company in Delhi.">
+<meta name="keywords" content="google adwords services Delhi, Google AdWords company in Delhi, ppc advertising companies Delhi, Google advertising Delhi">
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<link href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Five-->
+    <header class="main-header header-style-five">        
+        <!-- Main Box -->
+        <div class="main-box">
+            <div class="auto-container">
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                    
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="current dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+                                            <!-- <li><a href="affiliate-marketing.html">Affiliate Marketing</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">company</a>
+                                        <ul>
+                                            <li><a href="{% url 'about' %}">About Our Company</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="price.html">Pricing</a></li> -->
+                                    <!-- <li><a href="#">Jobs</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!--Outer Box-->
+                        <div class="outer-box">
+                            <a href="{% url 'quote' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Get a Quote</a>
+                        </div>
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>    
+            </div>
+        </div>
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container">
+                
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box pull-left">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo-small.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                                
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="current dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="email-marketing.html">Customized Software Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'about' %}">company</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+        
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/pattern-4.png' %});">
+        <div class="auto-container">
+            <h1>PPC COMPANY IN DELHI</h1>
+        </div>
+        <!--Page Info-->
+        <div class="page-info">
+            <div class="auto-container">
+            	<div class="inner-container">
+                    <ul class="bread-crumb">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li>Pay-Per-Click Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Page Info-->
+    </section>
+    <!--End Page Title-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                	<aside class="sidebar services-sidebar">
+						
+                        <div class="sidebar-title">
+                        	<h2>Our services</h2>
+                        </div>
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <ul class="blog-cat-two">
+                                <li><a href="digital-marketing.html">Digital Marketing</a></li>
+                                <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                <li><a href="{% url 'web' %}">Web Development</a></li>
+                                <li class="active"><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sidebar brochure-->
+                        <div class="sidebar-widget sidebar-brochure">
+                        	<div class="sidebar-title">
+                                <h2>Our Brochures</h2>
+                            </div>
+                        	<a class="brochure" href="#"><span class="icon flaticon-pdf"></span>Service Overview <span>Download.pdf</span></a>
+                            <a class="brochure" href="#"><span class="icon flaticon-word-file"></span>About Our Company <span>Download.doc</span></a>
+                        </div>
+                        
+                        <!-- Sidebar brochure-->
+                        <div class="sidebar-widget testimonial-widget">
+                            <div class="sidebar-title">
+                                <h2>Testimonials</h2>
+                            </div>
+                            <div class="single-item-carousel owl-carousel owl-theme">
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">
+                                                <h3>Ayush Garg</h3>
+                                                <div class="location">Softsmart, Punjab</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">Viral Groww has not only increased our visibility but also provide us full digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email, and marketing automation.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">                                                
+                                                <h3>David</h3>
+                                                <div class="location">Maxi Adventures, New Zealand</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">We started working with Viral Grow Marketing solutions from their establishment and they have been amazing. The success we have undergone year over has strengthened our position in Appareal’s Market.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">
+                                                <h3>Abhijeet Poddar</h3>
+                                                <div class="location">Qualmart Fabrics, Delhi</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">Viral Grow Marketing Solutions has been very helpful in increasing our online visibility and lead generation from ad campaigns and organic search. I am really impressed with their high level of service.The team of Viral Groww is Professional and responsive.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </aside>
+                </div>
+                
+                <!--Content Side-->
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                	<!--Services Single-->
+                	<div class="services-single">
+						<div class="inner-box">
+                        	<h2>PPC Management</h2>
+                            <div class="image">
+                                <img src="{% static 'images/resource/service-5.jpg' %}" alt="">
+                            </div>
+                            <div class="lower-content">
+                            	<div class="text">
+                                	<p>Pay-per-click marketing (PPC) effectively encapsulates an efficient way to extend marketing services online. When you make your services available online, you get paid every time someone your services, and there is no possible way to bring in revenue in some specific cases. That is why you are entirely within the bounds of your effective demands about not paying more than what results you get. The number of people who come to your website or any strategically placed service can serve as an important measuring stick for keeping track of the amount of traffic passing through any given passage over a certain period of time. Thus, PPC marketing companies provide accurate results when it comes to the amount of traffic, and the measurement is done through clicks or the number of times people come in contact with your company or services. </p>
+                                    <h3>What are the advantages of PPC marketing techniques?</h3>
+                                    <p>Through this mode of marketing or advertising, you can effectively achieve get quick attention from all your audiences, and gain a lot of traffic to any of your business domains. Generally speaking, PPC marketing should be used in conjunction with other forms of online marketing techniques, such as SEO and SMO. You can get the very top billing upon the search engine results, as well as gain a lot of visibility from a number of relevant social sites without needing to invest a lot into the marketing campaign. However, this mode of marketing often comes in variable modes and forms, most notably the ones, which have been mentioned below:</p>
+                                    <ul>
+                                        <li><strong>Google AdWords</strong><br>
+                                            Perhaps the most widely used form of the PPC technique, almost two-thirds of the population utilize AdWords as the most foolproof and assured technology that can aid with PPC marketing. Google AdWords management companies can help you not only achieve the ever elusive top spot of the Google Search Engine, but it also provides a vast array of tools in order to test keywords complementing SEO technologies.
+                                        </li>
+                                        <li><strong>Facebook Advertising</strong><br>Although it comes under the banner of essential SMO marketing techniques, Facebook allows its third-party advertisers to come in contact with approximately 1.01 billion people on a daily basis. Any Facebook advertising company should extend its services on a PPC service basis as it takes only a minimal amount of investment effectively.</li>
+                                        <li><strong>YouTube Advertising</strong><br>People in the contemporary world generally prefer taking in content on a video-based environment than actually written ones. Through the platform of YouTube, the world’s largest video sharing website, you can also effectively propagate your marketing strategies quite effectively. Through the help of an effective YouTube advertising company, you can achieve the necessary traffic as per your very own requirements.</li>
+                                    </ul>
+                                    <p> The general view of PPC marketing is often quite receptive and facilitating in every possible way. Additionally, Viral Groww provides all the necessary services that constitute an intrinsic part of the PPC marketing at the best rates possible. We shall effectively try our level best in conjunction with other online marketing techniques to meet your require mark, ad would charge you accordingly.</p>
+                                </div>
+                                <!--Two Column-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Sidebar Page Container-->
+    
+    <!--Quote Section-->
+    <section class="quote-two-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Title Column-->
+                <div class="title-column col-md-3 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Request a Quote</h2>
+                        <div class="text">Your details are kept strictly confidential as per our company private & privacy policy.</div>
+                        <a class="plans" href="price.html"><span class="arrow flaticon-right-arrow-1"></span>Pricing Plans</a>
+                    </div>
+                </div>
+                
+                <!--Form Column-->
+                <div class="form-column col-md-9 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<div class="text">For any inquiry, fill the form below:</div>
+                        
+                        <!--Contact Form-->
+                        <div class="quote-form style-two">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="row clearfix">
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            {{ inquiry_form.name }}
+                                        </div>
+                                        <div class="form-group">
+                                            {{ inquiry_form.inquiry_email }}
+                                        </div>
+                                        <div class="form-group">
+                                            {{ inquiry_form.service }}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            {{ inquiry_form.requirements }}
+                                        </div>
+                                    </div>
+                                    <div class="column btn-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Quote Section-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <div class="auto-container">
+        
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <div class="footer-title">
+                                <h2>Important Links</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="row clearfix">
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="footer-list">
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="#services">Our Services</a></li>
+                                            <li><a href="#">Why Choose Us</a></li>
+                                            <li><a href="#">{% url 'about' %}</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="footer-list">
+                                            <li><a href="#">FAQ’s</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget subscribe-widget">
+                            <div class="footer-title">
+                                <h2>Get in Touch</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="text">Join us to recieve latest Updates <br> News and Offers.</div>
+                                <div class="subscribe-form">
+                                    <form method="post" action="{% url 'subscribe' %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            {{ form }}
+                                            <button type="submit" class="theme-btn"><span class="flaticon-right-arrow-1"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <ul class="social-icon-one">
+                                    <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget office-widget">
+                            <div class="footer-title">
+                                <h2>Corporate Office</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="single-item-carousel owl-carousel owl-theme">
+                                    
+                                    <div class="office-info">
+                                        <ul>
+                                            <li><strong>Address:</strong></li>
+                                            <li>#404, 3/102, Lalita Park, Laxmi Nagar, Delhi (110092)</li>
+                                            <li><a href="#">Find Us On Map</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!--Copyright-->
+        <div class="copyright">Copyright &copy; 2017-2019 <a href="#">ViralGroww</a>. All rights reserved.</div>
+    </footer>
+    <!--Main Footer-->
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

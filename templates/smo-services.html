@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>SMO Company Delhi | SMO AgenciesDelhi | SMO Services in Delhi</title>
+<meta name="description" content="Get the Top & best social media advertising services (Facebook, Twitter, Insta etc.) at affordable rates from the Delhi best advertising company. Call For SMO.">
+<meta name="keywords" content="smo company, smo companies, smo company Delhi, smo companies Delhi, smo company in Delhi, Best SMO Company in Delhi, Top SMO service Provider in Delhi, SMO services in Delhi, Social media marketing Delhi, social media marketing companies, social media management companies, facebook advertising punjab, facebook advertising company Delhi">
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Five-->
+    <header class="main-header header-style-five">        
+        <!-- Main Box -->
+        <div class="main-box">
+            <div class="auto-container">
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                    
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="current dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+                                            <!-- <li><a href="affiliate-marketing.html">Affiliate Marketing</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">company</a>
+                                        <ul>
+                                            <li><a href="{% url 'about' %}">About Our Company</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="price.html">Pricing</a></li> -->
+                                    <!-- <li><a href="#">Jobs</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!--Outer Box-->
+                        <div class="outer-box">
+                            <a href="{% url 'quote' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Get a Quote</a>
+                        </div>
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>    
+            </div>
+        </div>
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container">
+                
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box pull-left">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo-small.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                                
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="current dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="email-marketing.html">Customized Software Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'about' %}">company</a></li>
+                                   <!--  <li class="dropdown"><a href="#">Case Studies</a>
+                                        <ul>
+                                            <li><a href="case.html">Case Studies Default</a></li>
+                                            <li><a href="cases-text.html">Case Studies Modern</a></li>
+                                            <li><a href="cases-single.html">Single Case</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="price.html">Pricing</a></li> -->
+                                   <!--  <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog Default</a></li>
+                                            <li><a href="blog-classic.html">Blog Large Image</a></li>
+                                            <li><a href="blog-detail.html">Single Post</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="#">Jobs</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+        
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/pattern-4.png' %});">
+        <div class="auto-container">
+            <h1>SMO COMPANY IN DELHI</h1>
+        </div>
+        <!--Page Info-->
+        <div class="page-info">
+            <div class="auto-container">
+            	<div class="inner-container">
+                    <ul class="bread-crumb">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li>Social Media Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Page Info-->
+    </section>
+    <!--End Page Title-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                	<aside class="sidebar services-sidebar">
+						
+                        <div class="sidebar-title">
+                        	<h2>Our services</h2>
+                        </div>
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <ul class="blog-cat-two">
+                                <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                <li class="active"><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                <li><a href="{% url 'web' %}">Web Development</a></li>
+                                <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sidebar brochure-->
+                        <div class="sidebar-widget sidebar-brochure">
+                        	<div class="sidebar-title">
+                                <h2>Our Brochures</h2>
+                            </div>
+                        	<a class="brochure" href="#"><span class="icon flaticon-pdf"></span>Service Overview <span>Download.pdf</span></a>
+                            <a class="brochure" href="#"><span class="icon flaticon-word-file"></span>About Our Company <span>Download.doc</span></a>
+                        </div>
+                        
+                        <!-- Sidebar brochure-->
+                        <div class="sidebar-widget testimonial-widget">
+                            <div class="sidebar-title">
+                                <h2>Testimonials</h2>
+                            </div>
+                            <div class="single-item-carousel owl-carousel owl-theme">
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">
+                                                <h3>Ayush Garg</h3>
+                                                <div class="location">Softsmart, Punjab</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">Viral Groww has not only increased our visibility but also provide us full digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email, and marketing automation.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">                                                
+                                                <h3>David</h3>
+                                                <div class="location">Maxi Adventures, New Zealand</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">We started working with Viral Grow Marketing solutions from their establishment and they have been amazing. The success we have undergone year over has strengthened our position in Appareal’s Market.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">
+                                                <h3>Abhijeet Poddar</h3>
+                                                <div class="location">Qualmart Fabrics, Delhi</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">Viral Grow Marketing Solutions has been very helpful in increasing our online visibility and lead generation from ad campaigns and organic search. I am really impressed with their high level of service.The team of Viral Groww is Professional and responsive.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </aside>
+                </div>
+                
+                <!--Content Side-->
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                	<!--Services Single-->
+                	<div class="services-single">
+						<div class="inner-box">
+                        	<h2>Social Media Optimization Services</h2>
+                            <div class="image">
+                                <img src="{% static 'images/resource/service-3.jpg' %}" alt="" />
+                            </div>
+                            <div class="lower-content">
+                            	<div class="text">
+                                	<p>Brands of today often find it quite confusing to find the ideal social platform for effectively market themselves. Social media is often considered to be the greatest repository for getting the largest possible audience for any particular product and service. But, the presence of such a large number of varying social media platforms often result in a great sense of bewilderment, and brands often consider themselves failing even if they were not able to quite reach their audience. That is the exact reason choosing SMO services is such a sound a marketing decision. Not only are you getting all your marketing requirements solved, but your products and services are also getting exposed to the largest audience possible. It is also essential to consider an SMO company that can understand your requirements and aims, while also being able to act upon it in an effective way. </p>
+                                    <h3>What to expect to from SMO Services?</h3>
+                                    <p>SMO companies of today who are being successful today in a highly competitive market environment, all possess some central qualities that are quite foundational in nature. You might not be aware of it, but there is effectively a whole new dimension to this branch of marketing, and ways through which connection to people can be established. For further effectiveness, social media agencies also are supposed to tailor themselves and their abilities to serve their clients’ need in order to produce compelling content, which are the primary modes of communication.<br>
+                                    The extent of the essential services that generally constitute the expectations of any top social marketing company are mentioned below:</p>
+                                    <ul>
+                                        <li>- Listing your businesses across the most appropriate social platforms</li>
+                                        <li>- Assisting in maintaining your online presence at regular intervals</li>
+                                        <li>- Brand awareness is to be improved virally over time</li>
+                                        <li>- Effectively and productively engaging with all possible visitors upon your website</li>
+                                        <li>- Building and intelligently releasing catchy and arresting content all over the social media platforms</li>
+                                        <li>- Take interest throughout the process so that conversion is at an all-time high</li>
+                                        <li>- Facilitating cost-effective advertisement in any way possible.</li>
+                                        <li>- Preparing attractive graphical content</li>
+                                    </ul>
+                                    <h3>When to try for SMO Services?</h3>
+                                    <p>Is your brand is truly one of a kind? Does it have the potential to better than your competitors? But, how to get the necessary audience that may raise your core customer base? Generally speaking, each business idea has something new to offer to the market, and they are often left without gaining attention during the little time they are active in the market. It is truly a shame and something from which the entire industry suffers over an extended period of time. Traditional SMO knowledge is important, but so is the requirement for originality and thinking outside-of-the-box. These are the special aspects of any entity claiming to be the best social media company.<br>
+                                    Viral Grow Marketing Solution has all the positive qualities that have been mentioned above, while also performing all the essential tasks that are expected from them as being the Top SMO service provider in Delhi. Our track record has been equally impressive and carries a lot of value across all possible domains. We can take care of all your social media expectations, and that is why we are regularly touted as the Best SMO Company in Delhi.</p>
+                                </div>
+                                <!--Two Column-->                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Sidebar Page Container-->
+    
+    <!--Quote Section-->
+    <section class="quote-two-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Title Column-->
+                <div class="title-column col-md-3 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Request a Quote</h2>
+                        <div class="text">Your details are kept strictly confidential as per our company private & privacy policy.</div>
+                        <a class="plans" href="price.html"><span class="arrow flaticon-right-arrow-1"></span>Pricing Plans</a>
+                    </div>
+                </div>
+                
+                <!--Form Column-->
+                <div class="form-column col-md-9 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<div class="text">For any inquiry, fill the form below:</div>
+                        
+                        <!--Contact Form-->
+                        <div class="quote-form style-two">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="row clearfix">
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            {{ inquiry_form.name }}
+                                        </div>
+                                        <div class="form-group">
+                                            {{ inquiry_form.inquiry_email }}
+                                        </div>
+                                        <div class="form-group">
+                                            {{ inquiry_form.service }}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            {{ inquiry_form.requirements }}
+                                        </div>
+                                    </div>
+                                    <div class="column btn-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Quote Section-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <div class="auto-container">
+        
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <div class="footer-title">
+                                <h2>Important Links</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="row clearfix">
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="footer-list">
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="#services">Our Services</a></li>
+                                            <li><a href="#">Why Choose Us</a></li>
+                                            <li><a href="#">{% url 'about' %}</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="footer-list">
+                                            <li><a href="#">FAQ’s</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget subscribe-widget">
+                            <div class="footer-title">
+                                <h2>Get in Touch</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="text">Join us to recieve latest Updates <br> News and Offers.</div>
+                                <div class="subscribe-form">
+                                    <form method="post" action="{% url 'subscribe' %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            {{ form }}
+                                            <button type="submit" class="theme-btn"><span class="flaticon-right-arrow-1"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <ul class="social-icon-one">
+                                    <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget office-widget">
+                            <div class="footer-title">
+                                <h2>Corporate Office</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="single-item-carousel owl-carousel owl-theme">
+                                    
+                                    <div class="office-info">
+                                        <ul>
+                                            <li><strong>Address:</strong></li>
+                                            <li>#404, 3/102, Lalita Park, Laxmi Nagar, Delhi (110092)</li>
+                                            <li><a href="#">Find Us On Map</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!--Copyright-->
+        <div class="copyright">Copyright &copy; 2017-2019 <a href="#">ViralGroww</a>. All rights reserved.</div>
+    </footer>
+    <!--Main Footer-->
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>

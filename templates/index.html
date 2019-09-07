@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>Viral Grow Marketing Solutions - Growth Simplified</title>
+<meta name="description" content="Viral Grow Marketing Solutions is one of the innovative Digital marketing company in Delhi, which offers internet marketing services with the latest online trends & updates.">
+<meta name="keywords" content="Viral Grow, Viral Groww, VG">
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
+<link href="{% static 'plugins/revolution/css/layers.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION LAYERS STYLES -->
+<link href="{% static 'plugins/revolution/css/navigation.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION NAVIGATION STYLES -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{static images/favicon.png" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header-->
+    <header class="main-header header-style-one">        
+        <!-- Main Box -->
+    	<div class="main-box">
+        	<div class="auto-container">
+            	<div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                    
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current"><a href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Services</a>
+                                    	<ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+                                            <!-- <li><a href="affiliate-marketing.html">Affiliate Marketing</a></li> -->                                    
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">company</a>
+                                    	<ul>
+                                            <li><a href="{% url 'about' %}">About Our Company</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- <li><a href="price.html">Pricing</a></li> -->
+                                    <!-- <li><a href="#">Jobs</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!--Outer Box-->
+                        <div class="outer-box">
+                            <a href="{% url 'quote' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Get a Quote</a>
+                        </div>
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+            	</div>    
+            </div>
+        </div>
+    	
+        <!--Sticky Header-->
+        <div class="sticky-header">
+        	<div class="auto-container">
+            	
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box pull-left">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo-small.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->    	
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                                
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current"><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="dropdown"><a href="#">Services</a>
+                                    	<ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+                                            <!-- <li><a href="affiliate-marketing.html">Affiliate Marketing</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'about' %}">company</a></li>                                  
+                                    <li><a href="#">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+            	</div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+        
+    </header>
+    <!--End Main Header -->
+    
+    <!--Main Slider-->
+    <section class="main-slider">
+    	
+        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
+            <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
+                <ul>
+
+                	<li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-1.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-1.jpg' %}"> 
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-30','-90','-90','-60']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<h2><span>top</span>Digital Marketing agency <br> in India.</h2>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['470','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['40','40','20','0']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="text">We offer Digital Marketing Solutions that can be tailored to suit any budget and business.</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['130','150','120','100']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="btns-box">
+                    		<a href="{% url 'digital' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="auto"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['20','15','15','15']"
+                    data-x="['right','right','right','right']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<figure class="content-image"><img src="{% static 'images/main-slider/content-image-1.png' %}" alt=""></figure>
+                    </div>
+                    
+                    </li>
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-2.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-2.jpg' %}"> 
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-30','-50','-50','-50']"
+                    data-x="['right','right','right','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<h2 class="light"><span>SEO</span>Search Engine <br> OPTIMIZATION</h2>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['40','20','20','15']"
+                    data-x="['right','right','right','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="text light">These are the services given by expert service provider in which practices of Search Engine Optimization are being used in order to increase the number of visitors on the website by having the higher rank on search engine.</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['130','100','100','100']"
+                    data-x="['right','right','right','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="btns-box">
+                    		<a href="{% url 'seo' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="auto"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['20','0','0','0']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<figure class="content-image"><img src="{% static 'images/main-slider/content-image-2.png' %}" alt=""></figure>
+                    </div>
+                    
+                    </li>
+                    
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1690" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{% static 'images/main-slider/image-3.jpg' %}" data-title="Slide Title" data-transition="parallaxvertical">
+                    <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{% static 'images/main-slider/image-3.jpg' %}"> 
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['-30','-90','-90','-60']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<h2 class="light"><span>ppc</span>PAY-PER-CLICK<br>marketing</h2>
+                    </div>
+                    
+                    <div class="tp-caption" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['470','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['30','40','20','0']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="text light">Pay-per-click marketing effectively encapsulates an efficient way to extend marketing services online.</div>
+                    </div>
+                    
+                    <div class="tp-caption tp-resizeme" 
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="text"
+                    data-height="none"
+                    data-width="['560','700','700','550']"
+                    data-whitespace="normal"
+                    data-hoffset="['15','15','15','15']"
+                    data-voffset="['120','150','120','100']"
+                    data-x="['left','left','left','left']"
+                    data-y="['middle','middle','middle','middle']"
+                    data-textalign="['top','top','top','top']"
+                    data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<div class="btns-box">
+                    		<a href="{% url 'ppc' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                        </div>
+                    </div>
+                    
+                    <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme"
+                    data-paddingbottom="[0,0,0,0]"
+                    data-paddingleft="[0,0,0,0]"
+                    data-paddingright="[0,0,0,0]"
+                    data-paddingtop="[0,0,0,0]"
+                    data-responsive_offset="on"
+                    data-type="shape"
+                    data-height="auto"
+                    data-whitespace="nowrap"
+                    data-width="none"
+                    data-hoffset="['-80','15','15','15']"
+                    data-voffset="['0','0','0','0']"
+                    data-x="['right','right','right','right']"
+                    data-y="['bottom','bottom','bottom','bottom']"
+                    data-frames='[{"from":"x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1000,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                    	<figure class="content-image"><img src="{% static 'images/main-slider/content-image-3.png' %}" alt=""></figure>
+                    </div>
+                    
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Main Slider-->
+            
+        <div class="container centered" style="margin-top: 100px;" style="padding: 0px 60px 18px;">
+             <h1 style="font-size: 40px; color: #0f1341 ;font-weight: 800; border-bottom: 1px solid #f1f1f1;" class="text-center font-weight-bold">Viral Grow Marketing Solutions</h1>
+             <p style="font-size: 30px; font-weight: 500;">A LEADING MARKETING  & ADVERTISING  COMPANY IN DELHI</p>
+        
+            <div class="text" style="color: #808080; font-size: 18px; font-weight: 400;">
+               In an era, where world is changing in each and every minute, in terms of Knowledge, Power and Money. Where everything is taking a digital form even the money also.<br>With all these changes taking place, there is evolving huge competition among businesses to stay ahead in the market and stand out from their competitors.<br>We at <strong>ViralGroww</strong> are inspired and motivated to help businesses achieve the ongoing demand of finding unique solution to the marketing strategies through our <strong>Digital Marketing Services</strong> and also implementing with at most efficiency.<br>Our team of experts always focus on finding the tailor made solutions for each clients, combining the latest technology techniques with online market trends, because each business has its own story.
+            </div>
+        </div>
+
+    <!--Services Section-->
+    <section class="services-section" id="services">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>Our services</h2>
+                <div class="text">We help you generate high-quality online sales leads by implementing highly structured, persuasive Internet marketing campaigns.</div>
+            </div>
+            
+            <div class="three-item-carousel owl-carousel owl-theme">
+            	
+                <!--Services Block-->
+                <div class="services-block">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon"><img src="{% static 'images/icons/services-1.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Search Engine Optimization</a></h3>
+                        <div class="text">By optimizing, The website gets the higher ranking on search engines.</div>
+                        <a href="{% url 'seo' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon"><img src="{% static 'images/icons/services-2.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Pay Per Click Management</a></h3>
+                        <div class="text">PPC effectively encapsulates an efficient way to extend marketing services online.</div>
+                        <a href="{% url 'ppc' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block">
+                	<div class="inner-box">    
+                    	<div class="icon-box">
+                        	<span class="icon"><img src="{% static 'images/icons/services-8.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Software Development</a></h3>
+                        <div class="text">It means the amalgamation of several activities like programming etc.</div>
+                        <a href="{% url 'software' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon"><img src="{% static 'images/icons/services-1.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Brand Management</a></h3>
+                        <div class="text">It has the most trending topic for Digital marketing companies all over the world.</div>
+                        <a href="{% url 'brand' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon"><img src="{% static 'images/icons/services-2.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Content Writing</a></h3>
+                        <div class="text">It generally constitutes fulfilling the provision of information.</div>
+                        <a href="{% url 'content' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block">
+                	<div class="inner-box">
+                    	<div class="icon-box">
+                        	<span class="icon"><img src="{% static 'images/icons/services-9.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Web Development</a></h3>
+                        <div class="text">Websites are generally considered to be the primordial forms of online marketing.</div>
+                        <a href="{% url 'web' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+
+                <!--Services Block-->
+                <div class="services-block">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon"><img src="{% static 'images/icons/services-1.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Logo Designing</a></h3>
+                        <div class="text">The visual identity of an organization tell organization's story to its Audience.</div>
+                        <a href="{% url 'logo' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+                <!--Services Block-->
+                <div class="services-block">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon"><img src="{% static 'images/icons/services-2.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Video Editing</a></h3>
+                        <div class="text">Engage Customers like never before through our Professional Video Editing Services.</div>
+                        <a href="{% url 'video' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>
+                
+               <!--Services Block-->
+                <div class="services-block">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <span class="icon"><img src="{% static 'images/icons/services-1.png' %}" alt="" /></span>
+                        </div>
+                        <h3><a href="services.html">Social Media Optimization</a></h3>
+                        <div class="text">All SMO companies possess some central qualities that are quite foundational in nature.</div>
+                        <a href="{% url 'smo' %}" class="read-more"><span class="icon flaticon-right-arrow-1"></span> Read More</a>
+                    </div>
+                </div>             
+            </div>            
+        </div>
+    </section>
+    <!--End Services Section-->
+    
+    <!--Featured Section Two-->
+    <section class="featured-section-two" style="background-image:url({% static 'images/background/pattern-2.png' %})">
+    	<div class="auto-container">
+        	<!--Sec Title-->
+            <div class="sec-title centered">
+            	<h2>Some Features</h2>
+            </div>
+            <div class="inner-container">
+            	<div class="clearfix">
+                
+                    <!--Featured Block Two-->
+                    <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon"><img src="{% static 'images/icons/featured-icon-4.png' %}" alt="" /></span>
+                            </div>
+                            <h3>Mobile Specialty</h3>
+                            <div class="text">We develop Mobile Friendly and Optimized Websites.</div>
+                            <div class="overlay-box">
+                            	<div class="overlay-inner">
+                                	<div class="overlay-icon-box">
+                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-4.png' %}" alt="" /></span>
+                                    </div>
+                                    <h3><a href="{% url 'quote' %}">Mobile Specialty</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Featured Block Two-->
+                    <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon"><img src="{% static 'images/icons/featured-icon-5.png' %}" alt="" /></span>
+                            </div>
+                            <h3>Big Data Analysis</h3>
+                            <div class="text">Analysis of all your data is our responsibility.</div>
+                            <div class="overlay-box">
+                            	<div class="overlay-inner">
+                                	<div class="overlay-icon-box">
+                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-5.png' %}" alt="" /></span>
+                                    </div>
+                                    <h3><a href="{% url 'quote' %}">Big Data Analysis</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Featured Block Two-->
+                    <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon"><img src="{% static 'images/icons/featured-icon-6.png' %}" alt="" /></span>
+                            </div>
+                            <h3>Best Keyword Ranking</h3>
+                            <div class="text">Get Your Website SEO optimized and see your keyword ranking yourself.</div>
+                            <div class="overlay-box">
+                            	<div class="overlay-inner">
+                                	<div class="overlay-icon-box">
+                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-6.png' %}" alt="" /></span>
+                                    </div>
+                                    <h3><a href="{% url 'quote' %}">Best Keyword Ranking</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Featured Block Two-->
+                    <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon"><img src="{% static 'images/icons/featured-icon-7.png' %}" alt="" /></span>
+                            </div>
+                            <h3>Speed Optimization</h3>
+                            <div class="text">We promise your website to be light weighted using advanced technologies.</div>
+                            <div class="overlay-box">
+                            	<div class="overlay-inner">
+                                	<div class="overlay-icon-box">
+                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-7.png' %}" alt="" /></span>
+                                    </div>
+                                    <h3><a href="{% url 'quote' %}">Speed Optimization</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Featured Block Two-->
+                    <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon"><img src="{% static 'images/icons/featured-icon-8.png' %}" alt="" /></span>
+                            </div>
+                            <h3>Better Conversion</h3>
+                            <div class="text">After Optimization, compare your Client Conversion rate and see the results yourself.</div>
+                            <div class="overlay-box">
+                            	<div class="overlay-inner">
+                                	<div class="overlay-icon-box">
+                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-8.png' %}" alt="" /></span>
+                                    </div>
+                                    <h3><a href="{% url 'quote' %}">Better Conversion</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Featured Block Two-->
+                    <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <span class="icon"><img src="{% static 'images/icons/featured-icon-9.png' %}" alt="" /></span>
+                            </div>
+                            <h3>Network Monitoring</h3>
+                            <div class="text">All your network traffic details will be sent to you on regular basis.</div>
+                            <div class="overlay-box">
+                            	<div class="overlay-inner">
+                                	<div class="overlay-icon-box">
+                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-9.png' %}" alt="" /></span>
+                                    </div>
+                                    <h3><a href="{% url 'quote' %}">Network Monitoring</a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Featured Section Two-->
+    
+    <!--Marketing Section-->
+    <section class="marketing-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Image Column-->
+                <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="image">
+                    	<img src="{% static 'images/resource/firefox.png' %}" alt="" />
+                    </div>
+                </div>
+                <!--Content Column-->
+                <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>We’ll Make Your Web Marketing<br> More Efficient!</h2>
+                        <div class="single-item-carousel owl-carousel owl-theme">
+                        
+                        	<!--Market Content-->
+                            <div class="market-content">
+                                <div class="content-inner">
+                                	<div class="content-number">1.</div>
+                                    <h3>Save Time and Money</h3>
+                                    <div class="text">We have associated with the top creative minds who are there to formulate the best plans and ideas for your company to enhance the vision of your brand. Being an advertising agency, we aim to provide the best and stand out from the rest.</div>
+                                    
+                                    <div class="featured-block-three">
+                                    	<div class="featured-inner">
+                                        	<div class="icon-box">
+                                            	<span class="icon"><img src="{% static 'images/icons/featured-icon-10.png' %}" alt="" /></span>
+                                            </div>
+                                            <h4>Top-notch Service and Client Commitment</h4>
+                                            <div class="featured-text">Everything we perform revolves around client satisfaction and communication.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="featured-block-three">
+                                    	<div class="featured-inner">
+                                        	<div class="icon-box">
+                                            	<span class="icon"><img src="{% static 'images/icons/featured-icon-11.png' %}" alt="" /></span>
+                                            </div>
+                                            <h4>Proper Technical Knowledge</h4>
+                                            <div class="featured-text">Our knowledge of current software and creative resources are unending.</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <!--Market Content-->
+                            <div class="market-content">
+                                <div class="content-inner">
+                                	<div class="content-number">2.</div>
+                                    <h3>Skilled Services</h3>
+                                    <div class="text">The diversity of Skills & Range of Services we ensure our clients to provide them with the best of the services to take their business to the success ladder.</div>
+                                    
+                                    <div class="featured-block-three">
+                                    	<div class="featured-inner">
+                                        	<div class="icon-box">
+                                            	<span class="icon"><img src="{% static 'images/icons/featured-icon-10.png' %}" alt="" /></span>
+                                            </div>
+                                            <h4>Multiple Services Under One Roof</h4>
+                                            <div class="featured-text">Designing, implementing and managing a broad spectrum of creative services.</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="featured-block-three">
+                                    	<div class="featured-inner">
+                                        	<div class="icon-box">
+                                            	<span class="icon"><img src="{% static 'images/icons/featured-icon-11.png' %}" alt="" /></span>
+                                            </div>
+                                            <h4>On time deleivery</h4>
+                                            <div class="featured-text">Get your problems solved instantly by our skilled and fast approaches.</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>                                                       
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!--End Marketing Section-->
+    
+    <!--Testimonial Section-->
+    <section class="testimonial-section" style="background-image:url({% static 'images/background/2.jpg' %})">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Title Column-->
+                <div class="title-column col-md-5 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Words <br> From Our Trusted <br> Customers.</h2>
+                    </div>
+                </div>
+                <!--Testimonial Column-->
+                <div class="testimonial-column col-md-7 col-sm-12 col-xs-12">
+                	<div class="testimonial-carousel owl-carousel owl-theme">
+                    
+                    	<!--Testimonial Block-->
+                        <div class="testimonial-block">
+                        	<div class="inner-box">
+                            	<div class="quote-icon">
+                                	<span class="icon flaticon-straight-quotes"></span>
+                                </div>
+                                <div class="text">Viral Groww has not only increased our visibility but also provide us full digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email, and marketing automation.</div>
+                                <div class="author-info">
+                                	<div class="author-inner">
+                                        <h3>Ayush Garg</h3>
+                                    	<div class="designation">Softsmart, Punjab</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Testimonial Block-->
+                        <div class="testimonial-block">
+                        	<div class="inner-box">
+                            	<div class="quote-icon">
+                                	<span class="icon flaticon-straight-quotes"></span>
+                                </div>
+                                <div class="text">We started working with Viral Grow Marketing solutions from their establishment and they have been amazing. The success we have undergone year over has strengthened our position in Appareal’s Market.</div>
+                                <div class="author-info">
+                                	<div class="author-inner">
+                                        <h3>David</h3>
+                                    	<div class="designation">Maxi Adventures, New Zealand</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!--Testimonial Block-->
+                        <div class="testimonial-block">
+                        	<div class="inner-box">
+                            	<div class="quote-icon">
+                                	<span class="icon flaticon-straight-quotes"></span>
+                                </div>
+                                <div class="text">Viral Grow Marketing Solutions has been very helpful in increasing our online visibility and lead generation from ad campaigns and organic search. I am really impressed with their high level of service.The team of Viral Groww is Professional and responsive.</div>
+                                <div class="author-info">
+                                	<div class="author-inner">
+                                        <h3>Abhijeet Poddar</h3>
+                                    	<div class="designation">Qualmart Fabrics, Delhi</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Testimonial Section-->
+    
+    <!--Partners Section-->
+    <section class="partners-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Title Column-->
+                <div class="title-column col-md-4 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Our Partners</h2>
+                    </div>
+                </div>
+                <!--Partners Column-->
+                <div class="partners-column col-md-8 col-sm-12 col-xs-12">
+                	<div class="row clearfix">
+                        <!--Column-->
+                        <div class="column col-md-4 col-sm-4 col-xs-12">
+                            <div class="partner-block">
+                            	<div class="inner-box">
+                                	<div class="client-img">
+                                    	<img src="{% static 'images/clients/1.png' %}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Column-->
+                        <div class="column col-md-4 col-sm-4 col-xs-12">
+                            <div class="partner-block">
+                            	<div class="inner-box">
+                                	<div class="client-img">
+                                    	<img src="{% static 'images/clients/5.png' %}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Column-->
+                        <div class="column col-md-4 col-sm-4 col-xs-12">
+                            <div class="partner-block">
+                                <div class="inner-box">
+                                    <div class="client-img">
+                                        <img src="{% static 'images/clients/7.png' %}" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                 <!--Column-->
+                <div class="column col-md-3 col-sm-4 col-xs-12">
+                    <div class="partner-block">
+                        <div class="inner-box">
+                            <div class="client-img">
+                                <img src="{% static 'images/clients/4.png' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--Column-->
+                <div class="column col-md-3 col-sm-4 col-xs-12">
+                    <div class="partner-block">
+                        <div class="inner-box">
+                            <div class="client-img">
+                                <img src="{% static 'images/clients/2.png' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--Column-->
+                <div class="column col-md-3 col-sm-4 col-xs-12">
+                    <div class="partner-block">
+                        <div class="inner-box">
+                            <div class="client-img">
+                                <img src="{% static 'images/clients/6.png' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!--Column-->
+                <div class="column col-md-3 col-sm-4 col-xs-12">
+                    <div class="partner-block">
+                        <div class="inner-box">
+                            <div class="client-img">
+                                <img src="{% static 'images/clients/3.png' %}" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Partners Section-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+    	<div class="auto-container">
+        
+        	<!--Widgets Section-->
+            <div class="widgets-section">
+            	<div class="row clearfix">
+                	
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+						<div class="footer-widget links-widget">
+                        	<div class="footer-title">
+                            	<h2>Important Links</h2>
+                            </div>
+                            <div class="widget-content">
+                            	<div class="row clearfix">
+                                	<div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                    	<ul class="footer-list">
+                                        	<li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="#services">Our Services</a></li>
+                                            <li><a href="#">Why Choose Us</a></li>
+                                            <li><a href="{% url 'about' %}">About</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                    	<ul class="footer-list">
+                                            <li><a href="#">FAQ’s</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Terms & Conditions</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+						<div class="footer-widget subscribe-widget">
+                        	<div class="footer-title">
+                            	<h2>Get in Touch</h2>
+                            </div>
+                            <div class="widget-content">
+                            	<div class="text">Join us to recieve latest Updates <br> News and Offers.</div>
+                                <div class="subscribe-form">
+                                    <form method="post" action="{% url 'subscribe' %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            {{ form }}
+                                            <button type="submit" class="theme-btn"><span class="flaticon-right-arrow-1"></span></button>
+                                        </div>
+                                    </form>
+                                    {% if messages %}
+                                    <ul class="messages">
+                                        {% for message in messages %}
+                                        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </div>
+                                <ul class="social-icon-one">
+                                    <li><a href="https://www.facebook.com/viralgroww"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="https://twitter.com/GrowwViralhttps://twitter.com/GrowwViral"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/viral-groww-marketing-solutions"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="https://www.instagram.com/viralgroww/"><span class="fa fa-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+						<div class="footer-widget office-widget">
+                        	<div class="footer-title">
+                            	<h2>Corporate Office</h2>
+                            </div>
+                            <div class="widget-content">
+								<div class="single-item-carousel owl-carousel owl-theme">
+                                	
+                                    <div class="office-info">
+                                    	<ul>
+                                        	<li><strong>Address:</strong></li>
+                                            <li>#404, 3/102, Lalita Park, Laxmi Nagar, Delhi (110092)</li>
+                                            <li><a href="#">Find Us On Map</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!--Copyright-->
+        <div class="copyright">Copyright &copy; 2017-2019 <a href="#">ViralGroww</a>. All rights reserved.</div>
+    </footer>
+    <!--Main Footer-->
+    
+    <!--Bottom Parallax-->
+    <div class="bottom-parallax">
+        <!--About Section-->
+        <section class="about-section" style="background-image:url({% static 'images/background/pattern-3.png' %})">
+            <div class="auto-container">
+                <div class="inner">
+                    <h2>We don’t just talk about what is coming next, we do it.</h2>
+                    <a href="{% url 'contact' %}" class="theme-btn btn-style-three">Join Us</a>
+                </div>
+            </div>
+        </section>
+        <!--End About Section-->
+    </div>
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script> 
+<!--Revolution Slider-->
+<script src="{% static 'plugins/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'plugins/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'js/main-slider-script.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/knob.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

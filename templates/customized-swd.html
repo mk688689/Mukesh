@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>Customised software Development Company in Delhi</title>
+<meta name="description" content="Viral Groww is a leading software development company in Delhi. We are expert in Developing customized software like web Apps, Frontend, Backend, Android & Ios.">
+<meta name="keywords" content="software development company in Delhi, software development, software development companies in Delhi, customised software development companies, Progressive web Apps Development, Backend Development services, Frontend Development services, Android & Ios Development">
+<!-- Stylesheets -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+<link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<!--[if lt IE 9]><script src="{% static 'https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="{% static 'js/respond.js"></script><![endif]-->
+</head>
+
+<body>
+
+<div class="page-wrapper">
+ 	
+    <!-- Preloader -->
+    <div class="preloader"></div>
+ 	
+    <!-- Main Header / Header Style Five-->
+    <header class="main-header header-style-five">        
+        <!-- Main Box -->
+        <div class="main-box">
+            <div class="auto-container">
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                    
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'home' %}">Home</a>
+                                    </li>
+                                    <li class="dropdown current"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="services.html">Search Engine Optimization</a></li>
+                                            <li><a href="services.html">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="email-marketing.html">Customized Software Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">company</a>
+                                        <ul>
+                                            <li><a href="{% url 'about' %}">About Our Company</a></li>
+                                            <!-- <li><a href="seo.html">SEO Analysis</a></li>
+                                            <li><a href="mobile-friendly.html">Mobile Friendly Test</a></li>
+                                            <li><a href="error-page.html">404 Page</a></li>
+                                            <li><a href="{% url 'quote' %}">Get a Quote</a></li>
+                                            <li><a href="testimonial.html">Testimonials</a></li>
+                                            <li><a href="comming-soon.html">Coming Soon</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li> -->
+                                        </ul>
+                                    </li>
+                                    <!-- <li class="dropdown"><a href="#">Case Studies</a>
+                                        <ul>
+                                            <li><a href="case.html">Case Studies Default</a></li>
+                                            <li><a href="cases-text.html">Case Studies Modern</a></li>
+                                            <li><a href="cases-single.html">Single Case</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="price.html">Pricing</a></li> -->
+                                    <!-- <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog Default</a></li>
+                                            <li><a href="blog-classic.html">Blog Large Image</a></li>
+                                            <li><a href="blog-detail.html">Single Post</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="#">Jobs</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                        <!--Outer Box-->
+                        <div class="outer-box">
+                            <a href="{% url 'quote' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Get a Quote</a>
+                        </div>
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>    
+            </div>
+        </div>
+        
+        <!--Sticky Header-->
+        <div class="sticky-header">
+            <div class="auto-container">
+                
+                <div class="outer-container clearfix">
+                    <!--Logo Box-->
+                    <div class="logo-box pull-left">
+                        <div class="logo"><a href="{% url 'home' %}"><img src="{% static 'images/logo-small.png' %}" alt=""></a></div>
+                    </div>
+                    
+                    <!--Nav Outer-->
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->      
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="current dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                            <li><a href="services.html">Search Engine Optimization</a></li>
+                                            <li><a href="services.html">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}">Web Development</a></li>
+                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                            <li><a href="email-marketing.html">Customized Software Development</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Add-On Services</a>
+                                        <ul>
+                                            <li><a href="{% url 'logo' %}">Logo Designing</a></li>
+                                            <li><a href="{% url 'brand' %}">Brand Management</a></li>
+                                            <li><a href="{% url 'content' %}">Content Writing</a></li>
+                                            <li><a href="{% url 'video' %}">Video Editing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="{% url 'about' %}">company</a></li>
+                                   <!--  <li class="dropdown"><a href="#">Case Studies</a>
+                                        <ul>
+                                            <li><a href="case.html">Case Studies Default</a></li>
+                                            <li><a href="cases-text.html">Case Studies Modern</a></li>
+                                            <li><a href="cases-single.html">Single Case</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="price.html">Pricing</a></li> -->
+                                   <!--  <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog Default</a></li>
+                                            <li><a href="blog-classic.html">Blog Large Image</a></li>
+                                            <li><a href="blog-detail.html">Single Post</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <!-- <li><a href="#">Jobs</a></li> -->
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                 </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                        
+                    </div>
+                    <!--Nav Outer End-->
+                    
+                </div>
+                
+            </div>
+        </div>
+        <!--End Sticky Header-->
+        
+    </header>
+    <!--End Main Header -->
+    
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/pattern-4.png' %});">
+        <div class="auto-container">
+            <h1>SOFTWARE DEVELOPMENT COMPANY IN DELHI</h1>
+        </div>
+        <!--Page Info-->
+        <div class="page-info">
+            <div class="auto-container">
+            	<div class="inner-container">
+                    <ul class="bread-crumb">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li>Software Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Page Info-->
+    </section>
+    <!--End Page Title-->
+    
+    <!--Sidebar Page Container-->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Sidebar Side-->
+                <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                	<aside class="sidebar services-sidebar">
+						
+                        <div class="sidebar-title">
+                        	<h2>Our services</h2>
+                        </div>
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <ul class="blog-cat-two">
+                                <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+                                <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                <li><a href="{% url 'web' %}">Web Development</a></li>
+                                <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
+                                <li class="active"><a href="{% url 'software' %}">Customized Software Development</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Sidebar brochure-->
+                        <div class="sidebar-widget sidebar-brochure">
+                        	<div class="sidebar-title">
+                                <h2>Our Brochures</h2>
+                            </div>
+                        	<a class="brochure" href="#"><span class="icon flaticon-pdf"></span>Service Overview <span>Download.pdf</span></a>
+                            <a class="brochure" href="#"><span class="icon flaticon-word-file"></span>About Our Company <span>Download.doc</span></a>
+                        </div>
+                        
+                        <!-- Sidebar brochure-->
+                        <div class="sidebar-widget testimonial-widget">
+                            <div class="sidebar-title">
+                                <h2>Testimonials</h2>
+                            </div>
+                            <div class="single-item-carousel owl-carousel owl-theme">
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">
+                                                <h3>Ayush Garg</h3>
+                                                <div class="location">Softsmart, Punjab</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">Viral Groww has not only increased our visibility but also provide us full digital marketing service that encompasses social media, demand generation, digital advertising, search engine optimization, email, and marketing automation.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">                                                
+                                                <h3>David</h3>
+                                                <div class="location">Maxi Adventures, New Zealand</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">We started working with Viral Grow Marketing solutions from their establishment and they have been amazing. The success we have undergone year over has strengthened our position in Appareal’s Market.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="inner-widget">
+                                        <div class="upper-box">
+                                            <div class="upper-inner">
+                                                <h3>Abhijeet Poddar</h3>
+                                                <div class="location">Qualmart Fabrics, Delhi</div>
+                                            </div>
+                                        </div>
+                                        <div class="text">Viral Grow Marketing Solutions has been very helpful in increasing our online visibility and lead generation from ad campaigns and organic search. I am really impressed with their high level of service.The team of Viral Groww is Professional and responsive.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </aside>
+                </div>
+                
+                <!--Content Side-->
+                <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                	<!--Services Single-->
+                	<div class="services-single">
+						<div class="inner-box">
+                        	<h2>Software Development</h2>
+                            <div class="image">
+                                <img src="{% static 'images/resource/service-6.jpg' %}" alt="" />
+                            </div>
+                            <div class="lower-content">
+                            	<div class="text">
+                                	<p>The term software development means the amalgamation of several activities like programming (High-level language), Bug fixing, testing, etc. which allow the development & maintenance of a Mobile application or system software. The development of any software consists of organized information like instructions and coding, written in a high-level language by developers.<br>
+                                    In this tech-savvy world, everything depends on software; whether it is running a small business or large business, everyone needs customized software of their need. Mainly software is divided into two categories, i.e. system software and Application software. In system software, the primary purpose is to control functions and usually, it comes preinstalled with the hardware.  The Application software is designed for the benefit of a user to perform specified tasks and activities such as communicating etc. </p>
+                                    <h3>ADVANTAGES OF SOFTWARE DEVELOPMENT :</h3>
+                                    <p>Viral Grow Marketing Solution - The best software development company in Delhi helping many small and big companies from all over the world to Stay Agile, innovative, and grow their business according to the changes in the market.<br>
+                                    The Advantage of software development are many, but we are mentioning some few and best below:</p>
+                                    <ul>
+                                        <li><strong>Cost Reduction: </strong>The main advantage of software development is it will save both your time and money.</li>
+                                        <li><strong>Boosts productivity: </strong>Software helps in increasing the richness of the business.</li>
+                                        <li><strong>Increase company Value: </strong>Apart from boosting productivity, it also increases the company value in the market.</li>
+                                        <li><strong>An Extra advantage in competition: </strong>When your company value increases, you will get an extra advantage to compete with niche companies.</li>
+                                        <li><strong>Enhances flexibility: </strong>It gives you an ability to accommodate future changes in its requirements.</li>
+                                    </ul>
+                                    <h3 style="margin-top: 25px;">Viral Groww Top Notch Development Services:</h3>
+                                    <ul>
+                                        <li>- Backend Development</li>
+                                        <li>- Frontend Development</li>
+                                        <li>- Progressive Web Apps</li>
+                                        <li>- Andorid & IOS</li>
+                                    </ul>
+                                    <ol>
+                                        <li><strong>Backend Development</strong><br>The Backend development is the most vital components of an application and can also be termed as "The Brain behind Mobile and web applications" which are carefully organized and written in a coding language, i.e. High-level language. The Backend is that part of any web and mobile application, which is invisible to a user. It works as a backbone, and the primary function is to connect and interconnect several parts of the software and mobile application. The backend web development coding should be carefully written for a good experience for the user. Our developers are professional and skilled in backend development services.<br>
+                                        In Backend web development services, We Deliver:</li>
+                                        <ul>
+                                            <li>• Professional and Experienced Developers</li>
+                                            <li>• Interactive and user-friendly software</li>
+                                            <li>• Custom REST API services & solutions.</li>
+                                            <li>• SEO friendly Integrated Content</li>
+                                        </ul>
+                                        <li><strong>Frontend Development</strong><br>Nowadays users are attracted towards Visually appealing web pages, so it is essential to work on frontend development. For a successful branding, we at Viral Groww offer exceptional front end & UI development services. Here are some key points of our frontend services:</li>
+                                        <ul>
+                                            <li>•   We deliver Attractive & visually appealing web front-end pages</li>
+                                            <li>•   We offer a vast array of front end development and UI/UX design as per clients need.</li>
+                                            <li>•   Our Frontend development is based on the latest industry trends.</li>
+                                            <li>•   The applications we develop are robust, load fast and are fully responsive.</li>
+                                        </ul>
+                                        <li><strong>Progressive Web Apps</strong><br>Progressive web apps are the latest trend, or you can say in other words "The next step of the Mobile Web."<br>
+                                        In comparison to other Native Apps, Progressive web apps work in dual mode, i.e. Online and offline. Progressive web apps are like two benefits in one, i.e. it seems like a native app and function like a website.<br>
+                                        We deliver progressive web apps that are Reliable, Fast and Engaging.</li>                                        
+                                        <li><strong>Android & IOS</strong><br>Viral groww is also in iOS app development service from the beginning. We have skilled App developers who believe in creating apps that are engaging.<br>
+                                        Our Specialized IOS Developers will develop Apps for iOS devices (iPad, Apple TV, watchOS). Swift is the language used for iOS app development.<br>
+                                        In our Android App development, we use robust technologies that help our clients business to grow exponentially.<br>
+                                        Android developers face difficult challenges as Google updates it API(Application program interface) every year like Material Design, 64-bit apps, Daydream & ARCore.</li>
+                                    </ol>
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--End Sidebar Page Container-->
+    
+    <!--Quote Section-->
+    <section class="quote-two-section">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+            	
+                <!--Title Column-->
+                <div class="title-column col-md-3 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<h2>Request a Quote</h2>
+                        <div class="text">Your details are kept strictly confidential as per our company private & privacy policy.</div>
+                        <a class="plans" href="price.html"><span class="arrow flaticon-right-arrow-1"></span>Pricing Plans</a>
+                    </div>
+                </div>
+                
+                <!--Form Column-->
+                <div class="form-column col-md-9 col-sm-12 col-xs-12">
+                	<div class="inner-column">
+                    	<div class="text">For any inquiry, fill the form below:</div>
+                        
+                        <!--Contact Form-->
+                        <div class="quote-form style-two">
+                            <form method="post">
+                                {% csrf_token %}
+                                <div class="row clearfix">
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            {{ inquiry_form.name }}
+                                        </div>
+                                        <div class="form-group">
+                                            {{ inquiry_form.inquiry_email }}
+                                        </div>
+                                        <div class="form-group">
+                                            {{ inquiry_form.service }}
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="form-group">
+                                            {{ inquiry_form.requirements }}
+                                        </div>
+                                    </div>
+                                    <div class="column btn-column col-md-6 col-sm-12 col-xs-12">
+                                        <div class="form-group">
+                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--End Quote Section-->
+    
+    <!--Main Footer-->
+    <footer class="main-footer">
+        <div class="auto-container">
+        
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget links-widget">
+                            <div class="footer-title">
+                                <h2>Important Links</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="row clearfix">
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="footer-list">
+                                            <li><a href="{% url 'about' %}">About Us</a></li>
+                                            <li><a href="#services">Our Services</a></li>
+                                            <li><a href="#">Why Choose Us</a></li>
+                                            <li><a href="#">{% url 'about' %}</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="widget-column col-md-6 col-sm-6 col-xs-12">
+                                        <ul class="footer-list">
+                                            <li><a href="#">FAQ’s</a></li>
+                                            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                   
+                                            <li><a href="#">Terms & Conditions</a></li>                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget subscribe-widget">
+                            <div class="footer-title">
+                                <h2>Get in Touch</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="text">Join us to recieve latest Updates <br> News and Offers.</div>
+                                <div class="subscribe-form">
+                                    <form method="post" action="{% url 'subscribe' %}">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            {{ form }}
+                                            <button type="submit" class="theme-btn"><span class="flaticon-right-arrow-1"></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <ul class="social-icon-one">
+                                    <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Column-->
+                    <div class="column col-md-4 col-sm-6 col-xs-12">
+                        <div class="footer-widget office-widget">
+                            <div class="footer-title">
+                                <h2>Corporate Office</h2>
+                            </div>
+                            <div class="widget-content">
+                                <div class="single-item-carousel owl-carousel owl-theme">
+                                    
+                                    <div class="office-info">
+                                        <ul>
+                                            <li><strong>Address:</strong></li>
+                                            <li>#404, 3/102, Lalita Park, Laxmi Nagar, Delhi (110092)</li>
+                                            <li><a href="#">Find Us On Map</a></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <!--Copyright-->
+        <div class="copyright">Copyright &copy; 2017-2019 <a href="#">ViralGroww</a>. All rights reserved.</div>
+    </footer>
+    <!--Main Footer-->
+    
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+
+<script src="{% static 'js/jquery.js' %}"></script> 
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/owl.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/jquery-ui.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
