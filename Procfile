@@ -1,1 +1,1 @@
-web: gunicorn viralgroww.wsgi
+web: gunicorn home.wsgi
