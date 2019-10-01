@@ -86,6 +86,7 @@ class QuoteForm(forms.ModelForm):
 		model = QuotePage
 		fields = ('name', 'quote_email', 'website', 'business', 'service', 'message', )
 
+
 class InquiryForm(forms.ModelForm):
 	name = forms.CharField(required=False, widget=forms.TextInput(attrs={
 		"type": "text",

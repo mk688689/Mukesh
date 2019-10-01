@@ -6,10 +6,8 @@ from newsletter.forms import EmailSignUpForm
 from .models import Signup
 import json
 import requests
-
 from django.core.mail import send_mail, BadHeaderError
 from .forms import ContactForm
-
 
 MAILCHIMP_API_KEY = settings.MAILCHIMP_API_KEY
 MAILCHIMP_DATA_CENTER = settings.MAILCHIMP_DATA_CENTER
@@ -17,6 +15,7 @@ MAILCHIMP_EMAIL_LIST_ID = settings.MAILCHIMP_EMAIL_LIST_ID
 
 api_url = f'https://{MAILCHIMP_DATA_CENTER}.api.mailchimp.com/3.0'
 members_endoint = f'{api_url}/lists/{MAILCHIMP_EMAIL_LIST_ID}/members'
+
 
 def subscribe(email):
 	data = {
@@ -29,6 +28,7 @@ def subscribe(email):
 		data = json.dumps(data)
 	)
 	return r.status_code, r.json()
+
 
 def email_list_signup(request):
 	

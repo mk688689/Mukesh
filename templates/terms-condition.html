@@ -1,0 +1,50 @@
+ {% extends 'base.html'%}
+  {% block title %}Terms & Conditions -Viralgroww {% endblock %}
+  {% block css %}
+  .policy_content p{margin-top: 15px;
+    margin-bottom: 20px;
+    text-align: justify;}
+   .policy_content  h4{font-weight:bold;}
+  {% endblock %}
+  {% block content %}
+  {% load static %}
+
+  <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/6.jpg' %});">
+        <div class="auto-container">
+            <h1>TERMS & CONDITIONS</h1>
+        </div>
+        <!--Page Info-->
+        <div class="page-info">
+            <div class="auto-container">
+            	<div class="inner-container">
+                    <ul class="bread-crumb">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Page Info-->
+    </section>
+    <!--End Page Title-->
+
+ <div class="container" style="margin-top:50px; margin-bottom:50px;">
+     <div class="row">
+         <div class="col-lg-12 policy_content ">
+             <h4>Cancellation policy</h4>
+             <p>Viral Grow Marketing Solutions follows a transparent and no fuss cancellation policy. Here are the terms of the policy:</p>
+             <p> All cancellation requests should be sent to our billing department or communicated to your Account Manager. The cancellation will not be valid until it is confirmed by the respective department.
+ </p>
+             <p>Cancellation requests will be considered only when the request is made within 12 hours of placing the order and execution of the project has not started already.
+</p>
+             <p>Viral Grow Marketing Solutions will not be held responsible for any third party services, such as hosting, web development, content writing etc.
+</p>
+             <h4>Refund policy </h4>
+             <p> Due to the nature of its services, Viral Grow Marketing Solutions does not guarantee any refunds upon cancellation. In case of monthly payment, it is understood that payment for next month is released only after reviewing the current month’s performance. Viral Grow Marketing Solutions does not make any guarantees on the basis of traffic/rankings etc. and will not be held responsible for any refund claims thereof.
+ </p>
+
+         </div>
+     </div>
+ </div>
+ {% endblock %}

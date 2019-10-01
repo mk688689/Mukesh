@@ -20,5 +20,8 @@ urlpatterns = [
 	path('seo-company-in-delhi/', seo_view, name="seo"),
 	path('smo-company-in-delhi/', smo_view, name="smo"),
 	path('video-editing-services-delhi/', video_editing_view, name="video"),
-	path('website-design-and-development/', web_development_view, name="web")
+	path('website-design-and-development/', web_development_view, name="web"),
+	path('partner/', partner_view, name="partner"),
+	path('policy/', policy_view, name="policy"),
+	path('terms-condition/', terms_condition_view, name="terms"),
 ]

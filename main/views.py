@@ -20,6 +20,7 @@ def home_view(request):
 	}
 	return render(request, 'index.html', context)
 
+
 def about_view(request):
 	form = EmailSignUpForm()
 	if request.method == 'POST':
@@ -32,6 +33,7 @@ def about_view(request):
 		'form': form
 	}
 	return render(request, 'about.html', context)
+
 
 def brand_management_view(request):
 	form = EmailSignUpForm()
@@ -51,7 +53,7 @@ def brand_management_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -60,6 +62,7 @@ def brand_management_view(request):
 		'inquiry_form': inquiry_form
 	}
 	return render(request, 'brand-management.html', context)
+
 
 def contact_view(request):
 	form = EmailSignUpForm()
@@ -79,7 +82,7 @@ def contact_view(request):
 				new_contact.message = contact_form.cleaned_data['message']
 				new_contact.save()
 				try:
-					send_mail(new_contact.subject, new_contact.from_email, new_contact.message, ['singlagarvit68@gmail.com'])
+					send_mail(new_contact.subject, new_contact.from_email, new_contact.message, ['viralgroww@gmail.com'])
 				except BadHeaderError:
 					return HttpResponse('Invalid Header Found')
 				return redirect('success')
@@ -89,8 +92,22 @@ def contact_view(request):
 	}
 	return render(request, "contact.html", context)
 
+
 def successView(request):
-	return HttpResponse("Success! Thank you for your message.")
+	return HttpResponse("<script>alert( 'success.thanks for contact us');</script>")
+
+
+def partner_view(request):
+	return render(request, 'international_partner.html')
+
+
+def policy_view(request):
+	return render(request, 'privacy_policy.html')
+
+
+def terms_condition_view(request):
+	return render(request, 'terms-condition.html')
+
 
 def content_writing_view(request):
 	form = EmailSignUpForm()
@@ -110,7 +127,7 @@ def content_writing_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -119,6 +136,7 @@ def content_writing_view(request):
 		'inquiry_form': inquiry_form
 	}
 	return render(request, 'content-writing.html', context)
+
 
 def custom_software_view(request):
 	form = EmailSignUpForm()
@@ -138,7 +156,7 @@ def custom_software_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -147,6 +165,7 @@ def custom_software_view(request):
 		'inquiry_form': inquiry_form
 	}
 	return render(request, 'customized-swd.html', context)
+
 
 def digital_marketing_view(request):
 	form = EmailSignUpForm()
@@ -166,7 +185,7 @@ def digital_marketing_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -197,7 +216,7 @@ def logo_design_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -206,6 +225,7 @@ def logo_design_view(request):
 		'inquiry_form': inquiry_form
 	}
 	return render(request, 'logo-designing.html', context)
+
 
 def ppc_view(request):
 	form = EmailSignUpForm()
@@ -225,7 +245,7 @@ def ppc_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -255,7 +275,7 @@ def quote_view(request):
 				new_quote.message = quote_form.cleaned_data['message']
 				new_quote.save()
 				try:
-					send_mail(new_quote.website, new_quote.service, new_quote.message, ['singlagarvit68@gmail.com'])
+					send_mail(new_quote.website, new_quote.service, new_quote.message, ['mk688689@gmail.com'])
 				except BadHeaderError:
 					return HttpResponse('Invalid Header Found')
 				return redirect('success')
@@ -283,7 +303,7 @@ def seo_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -311,7 +331,7 @@ def smo_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
@@ -339,7 +359,7 @@ def video_editing_view(request):
 				new_inquiry.requirements = inquiry_form.cleaned_data['requirements']
 				new_inquiry.save()
 			try:
-				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['singlagarvit68@gmail.com'])
+				send_mail(new_inquiry.name, new_inquiry.inquiry_email, new_inquiry.requirements, ['mk688689@gmail.com'])
 			except:
 				return HttpResponse('Invalid Header Found')
 			return redirect('success')
