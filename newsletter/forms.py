@@ -57,16 +57,17 @@ class QuoteForm(forms.ModelForm):
 	website = forms.CharField(required=False, widget=forms.TextInput(attrs={
 		"type": "text",
 		"name": "website",
-		"placeholder": "website",
+		"placeholder": "Website",
 		"required": "True"
 		}), label="")
 	business = forms.CharField(required=False, widget=forms.TextInput(attrs={
 		"type": "text",
 		"name": "business",
-		"placeholder": "Your Business Type",
+		"placeholder": "Your Industry?",
 		"required": "True"
 		}), label="")
 	SERVICE_CHOICES = [
+		('Select', 'Please Select a Service.'),
 		('SOCIAL MEDIA MARKETING', 'Social Media Marketing'),
 		('WEBSITE DEVELOPMENT', 'Website Development'),
 		('SEO AND WEBSITE DEVELOPMENT', 'SEO & Website Development'),
@@ -101,6 +102,7 @@ class InquiryForm(forms.ModelForm):
 		"required": "True"
 		}), label="")
 	SERVICE_CHOICES = [
+		('Select', 'Please Select a Service.'),
 		('SOCIAL MEDIA MARKETING', 'Social Media Marketing'),
 		('WEBSITE DEVELOPMENT', 'Website Development'),
 		('SEO AND WEBSITE DEVELOPMENT', 'SEO & Website Development'),

@@ -981,7 +981,7 @@ img{
 
 .main-menu .navigation{
 	position:relative;
-	margin:0px;
+	margin:-4px;
 }
 
 .main-menu .navigation > li{
