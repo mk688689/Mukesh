@@ -4,15 +4,16 @@
 {% load static %}
 <head>
 <meta charset="utf-8">
-<title>Contact - ViralGroww</title>
+<title>Help - ViralGroww</title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
 <link href="{% static 'css/style.css' %}" rel="stylesheet">
 <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
-     <link href="{% static 'css/hover.css'%}" rel="stylesheet">
+    <link href="{% static 'css/hover.css'%}" rel="stylesheet">
 
 <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -22,20 +23,28 @@
     .embed-responsive-100x400px{
   padding-bottom: 400px;
 }
-
-.help{margin-top:50px;}
-.help .col-lg-4{text-align:center;}
-.helplogo{width:150px; height:150px; border-radius:50%;  margin-top:50px;}
-<!--.helplogo :hover{-->
-<!--    background-color: red;-->
-<!--    width: 180px;-->
-<!--    height: 180px;-->
-<!--}-->
-<!--}-->
- .help .section h4{color:red; font-size:20px; font-family:sans-serif; margin-top:30px;}
-
-
-
+.form-group .form-control{
+    border-radius: 0px;
+    height: 45px;
+    color: #000;
+    margin-top:10px;
+}
+#help_head{margin-bottom: 20px;
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.4;}
+#help-content p{
+font-size:18px; color:black; margin-top:15px;
+}
+#btn_submit{
+    border-radius: 0px;
+    width: 20%;
+    height: 40px;
+    background-color: black;
+    border-color: #000;
+}
  </style>
 </head>
 
@@ -186,7 +195,7 @@
     <!--Page Title-->
     <section class="page-title" style="background-image:url({% static 'images/background/pattern-4.png' %});">
         <div class="auto-container">
-            <h1>Contact ViralGroww</h1>
+            <h1>Let's Design a Website?</h1>
         </div>
         <!--Page Info-->
         <div class="page-info">
@@ -203,142 +212,59 @@
     </section>
     <!--End Page Title-->
 
-    <div class="container help mt-5">
-        <div class="row">
-            <h1 class="text-center mt-5">How We Can Help?</h1>
-           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section">
-               <center>
-               <div>
-<!--               <i class="fa fa-question" style="position:relative; top:40%; font-size:120px; color:white;"></i>-->
-                   <a href="/help"><img src="{% static 'images/icons/1.jpg'%}" class="helplogo hvr-bounce-in"></a>
-               </div>
-                   <a href="/help"><h4 style="color:black; font-size:20px; font-family:sans-serif; margin-top:30px;">I need help with Marketing.</h4></a>
-               </center>
-           </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section">
-                <center>
-            <div>
-                <a href="/help-seo"><img src="{% static 'images/icons/2.jpg'%}" class="helplogo  hvr-bounce-out"></a>
+<div class="container" style="margin-top:100px; margin-bottom:150px;">
+    <div class="row">
+         <h3 class="wow slideInLeft hvr-glow " id="help_head" data-wow-duration="500ms" data-wow-delay="400ms">You are just four clicks away to get a fantastic website. </h3>
 
-               </div>
-                    <a href="/help-seo" ><h4 style="color:black; font-size:20px; font-family:sans-serif; margin-top:30px;">Send me an SEO Audit & then we will talk.</h4></a>
-                    </center>
-           </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section">
-                <center>
-             <div>
-                 <a href="/design-website" ><img src="{% static 'images/icons/3.jpg'%}" class="helplogo  hvr-bounce-in"></a>
-               </div>
-                    <a href="/design-website" > <h4 style="color:black; font-size:20px; font-family:sans-serif; margin-top:30px;">Let's Design a Website?</h4></a>
-                    </center>
-           </div>
-
-        </div>
-        <div class="row">
-
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section">
-                <center>
-
-                 <a href="/social-media"><img src="{% static 'images/icons/4.jpg'%}" class="helplogo  hvr-bounce-out"></a>
-
-                    <a href="/social-media"><h4 style="color:black; font-size:20px; font-family:sans-serif; margin-top:30px;">I want to do Social Media Marketing for my Brand.</h4></a>
-                    </center>
-           </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 section">
-                <center>
-             <div>
-                 <a href="/book-call" ><img src="{% static 'images/icons/5.jpg'%}" class="helplogo  hvr-bounce-in"></a>
-               </div>
-                    <a href="/book-call" ><h4 style="color:black; font-size:20px; font-family:sans-serif; margin-top:30px;"> Book a call with your starboy.</h4></a>
-                    </center>
-           </div>
-        </div>
-        </div>
-
-    <!--Contact Section-->
-    <section class="contact-section">
-    	<div class="auto-container">
-        	<div class="row clearfix">
-            	
-                <!--Contact Form Column-->
-                <div class="contact-form-column col-md-8 col-sm-12 col-xs-12">
-                	<div class="inner-column">
-                    	<h2>Drop Your Message Here</h2>
-                        <!-- <div class="text">We recently helped a small business grow from break-even to over $1 Million profit in less than 2 years, Have a general question, find below contact details .</div> -->
-                        <!--Contact Form-->
-                        <div class="contact-form">
-                            <form method="post" id="contact-form">
-                                {% csrf_token %}
-                                
-                                <div class="row clearfix">
-                                    {{ contact_form }}
-                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="form-group">
-                                            <input type="text" name="username" placeholder="Name*" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="email" name="email" placeholder="Email*" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="subject" placeholder="Subject" required>
-                                        </div>
-                                    </div> -->
-                                    
-                                    <!-- <div class="column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="form-group">
-                                            <textarea name="message" placeholder="Your Message..."></textarea>
-                                        </div>
-                                    </div> -->
-                                    <div class="column btn-column col-md-12 col-sm-12 col-xs-12">
-                                        <div class="form-group">
-                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit Now</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                    </div>
+        <div class="col-lg-10 col-md-10  offset-md-1" id="help-content">
+        <p  class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Hey, What's your good name?</p>
+            <form>
+           <div class="form-group">
+                    <input type="text" name="name" id="show-hidden-menu"  class="form-control  wow fadeInUp hvr-Outline Out"  data-wow-duration="1.3s" data-wow-delay="1.3s" placeholder="Enter Your Good Name">
                 </div>
-                <!--Info Column-->
-                <div class="contact-info-column col-md-4 col-sm-12 col-xs-12">
-                	<div class="inner-column">
-                    	<div class="upper-box">
-                        	<div class="single-item-carousel owl-carousel owl-theme">
-                            	
-                                <!--Info Slide-->
-                                <div class="info-slide">
-                                	<div class="inner">
-                                    	<div class="image">
-                                        	<img src="{% static 'images/resource/author-2.jpg' %}" alt="" />
-                                        </div>
-                                        <h3>Manish Pandey</h3>
-                                        <div class="title">SEO Consultant</div>
-                                        <div class="emailed"><span>Mail at:</span> support@viralgroww.co</div>
-                                    </div>
-                                </div>                                
-                            </div>
-                        </div>
-                        <div class="lower-box">
-                        	<ul class="info-list">
-                            	<li><span class="icon"><img src="{% static 'images/icons/address-icon.png' %}" alt="" /></span> <strong>Address:</strong> #404, 3/102, Lalita Park, Laxmi Nagar, Delhi (110092).</li>
-                                <li><span class="icon"><img src="{% static 'images/icons/phone-icon.png' %}" alt="" /></span> <strong>Call Us:</strong><br> +91 70042 05232</li>
-                                <li><span class="icon"><img src="{% static 'images/icons/mail-icon.png' %}" alt="" /></span> <strong>Mail Us:</strong> support@viralgroww.co</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="hidden-menu" style="display:none;">
+            <p> Can I please get your Email ID & Phone Number?</p>
+              <div class="form-group">
+                    <input type="text" name="name"  id="show-hidden-menu1"  class="form-control" placeholder="Enter Your Email/Phone">
                 </div>
-                
-            </div>
-        </div>
-    </section>
-    <!--End Contact Section-->
+                </div>
 
-<div class="container" style="margin-bottom:90px;">
-       <div class="embed-responsive embed-responsive-100x400px">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9927162257054!2d77.27534659999999!3d28.629980399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd6dbe9460f1%3A0xff0e475495fd6082!2sViral%20Groww%20%7C%20Digital%20Marketing%20Company%20in%20Delhi%20SEO%20SMO%20Website%20Design!5e0!3m2!1sen!2sin!4v1569930443319!5m2!1sen!2sin" width="1300" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  </div>
+                 <div class="hidden-menu1" style="display:none;">
+            <p>Do you have any reference to a website?</p>
+              <div class="form-group">
+                    <input type="text" name="name"  id="show-hidden-menu2"   class="form-control" placeholder="Yes/No">
+                </div>
+                </div>
+                <div class="hidden-menu2" style="display:none;">
+                    <p> You want us to write the content as well? </p>
+              <div class="form-group">
+                    <input type="text" name="name" id="show-hidden-menu3"  class="form-control" placeholder=" Yes/No ">
+                </div>
+                </div>
+
+                 <div class="hidden-menu4" style="display:none;">
+              <div class="form-group">
+                   <button type="submit"  class="btn btn-primary" id="btn_submit">Submit</button>
+                </div>
+                </div>
+
+
+
+
+        </div>
+
+    </form>
+
+    </div>
 </div>
+
+
+
+<!--<div class="container" style="margin-bottom:90px;">-->
+<!--       <div class="embed-responsive embed-responsive-100x400px">-->
+<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9927162257054!2d77.27534659999999!3d28.629980399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd6dbe9460f1%3A0xff0e475495fd6082!2sViral%20Groww%20%7C%20Digital%20Marketing%20Company%20in%20Delhi%20SEO%20SMO%20Website%20Design!5e0!3m2!1sen!2sin!4v1569930443319!5m2!1sen!2sin" width="1300" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>-->
+<!--  </div>-->
+<!--</div>-->
 
 
 
@@ -450,7 +376,8 @@
 <script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
 <script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
 <script src="{% static 'js/owl.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
+<!--<script src="{% static 'js/wow.js' %}"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 <script src="{% static 'js/validate.js' %}"></script>
 <script src="{% static 'js/appear.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
@@ -459,9 +386,32 @@
 <script src="{% static 'js/map-script.js' %}"></script>
 <!--End Google Map APi-->
 <script>
-    new WOW().init();
-</script>
+    $(document).ready(function() {
+  $('#show-hidden-menu').click(function() {
+    $('.hidden-menu').slideToggle("medium");
+  });
 
+   $('#show-hidden-menu1').click(function() {
+    $('.hidden-menu1').slideToggle("medium");
+  });
+
+     $('#show-hidden-menu2').click(function() {
+    $('.hidden-menu2').slideToggle("medium");
+  });
+
+    $('#show-hidden-menu3').click(function() {
+    $('.hidden-menu3').slideToggle("medium");
+  });
+      $('#show-hidden-menu4').click(function() {
+    $('.hidden-menu4').slideToggle("medium");
+  });
+});
+
+
+
+new WOW().init();
+
+</script>
 </body>
 
 </html>

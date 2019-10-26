@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 
 # Email Backend
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,6 +137,16 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MAILCHIMP_API_KEY = "faffd41c79ac9f03fe74c053e1ade838-us20"
 MAILCHIMP_DATA_CENTER = "us4"
 MAILCHIMP_EMAIL_LIST_ID = "a2eaf5ba6f"
+
+
+# Backend Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'mk688689@gmail.com'
+EMAIL_HOST_PASSWORD = 'annumukesh'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 
 #Activate Django-Heroku
 django_heroku.settings(locals())

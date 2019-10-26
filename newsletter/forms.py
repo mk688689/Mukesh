@@ -1,6 +1,7 @@
 from django import forms
 from .models import Signup, ContactPage, QuotePage, InquiryPage
 
+
 class EmailSignUpForm(forms.ModelForm):
 	email = forms.EmailField(widget=forms.TextInput(attrs={
 		"type": "email",
