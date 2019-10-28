@@ -77,11 +77,13 @@
                                             <li><a href="{% url 'video' %}">Video Editing</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="#">company</a>
-                                    	<ul>
-                                            <li><a href="{% url 'about' %}">About Our Company</a></li>
-                                        </ul>
+                                    <li><a href="{% url 'about' %}">About us</a>
+
+<!--                                    	<ul>-->
+<!--                                            <li><a href="{% url 'about' %}">About Us</a></li>-->
+<!--                                        </ul>-->
                                     </li>
+                                      <li><a href="{% url 'blog' %}">Blog</a></li>
                                     <!-- <li><a href="price.html">Pricing</a></li> -->
                                     <!-- <li><a href="#">Jobs</a></li> -->
                                     <li><a href="{% url 'contact' %}">Contact</a></li>
@@ -130,12 +132,15 @@
                                     <li class="current"><a href="{% url 'home' %}">Home</a></li>
                                     <li class="dropdown"><a href="#">Services</a>
                                     	<ul>
-                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>
+                                             <li><a href="{% url 'web' %}">Website Design & Development</a></li>
                                             <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
                                             <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
-                                            <li><a href="{% url 'web' %}">Web Development</a></li>
-                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>
-                                            <li><a href="{% url 'software' %}">Customized Software Development</a></li>
+<!--                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>-->
+<!--                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>-->
+<!--                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>-->
+<!--                                            <li><a href="{% url 'web' %}">Web Development</a></li>-->
+<!--                                            <li><a href="{% url 'ppc' %}">PPC Click Management</a></li>-->
+<!--                                            <li><a href="{% url 'software' %}">Customized Software Development</a></li>-->
                                             <!-- <li><a href="affiliate-marketing.html">Affiliate Marketing</a></li> -->
                                         </ul>
                                     </li>
@@ -147,8 +152,9 @@
                                             <li><a href="{% url 'video' %}">Video Editing</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{% url 'about' %}">company</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="{% url 'about' %}">About Us</a></li>
+                                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
                                  </ul>
                             </div>
                         </nav>
@@ -235,7 +241,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="btns-box">
-                    		<a href="{% url 'digital' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
+                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
                         </div>
                     </div>
                     
@@ -319,7 +325,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="btns-box">
-                    		<a href="{% url 'seo' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
+                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
                         </div>
                     </div>
                     
@@ -401,7 +407,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="btns-box">
-                    		<a href="{% url 'ppc' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span>Let's Talk?</a>
+                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span>Let's Talk?</a>
                         </div>
                     </div>
                     
@@ -791,7 +797,7 @@
                 	<div class="inner-column" style="margin-bottom:100px;">
                     	<h2>Not!<br>A Paid Review.<br> </h2>
                     </div>
-                     <a href="#" class="theme-btn btn-style-one">Take a Tour of Our Portfolio</a>
+                     <a href="{% url 'contact' %}" class="theme-btn btn-style-one">Take a Tour of Our Portfolio</a>
                 </div>
                 <!--Testimonial Column-->
                 <div class="testimonial-column col-md-7 col-sm-12 col-xs-12">
@@ -803,7 +809,8 @@
                             	<div class="quote-icon">
                                 	<span class="icon flaticon-straight-quotes"></span>
                                 </div>
-                                <div class="text"> I appreciate the cooperative spirit and the attention to detail that enabled us to streamline the entire process in order to achieve success and to meet our goals.</div>
+                                <div class="text"> I appreciate the cooperative spirit and the attention to detail that enabled us to streamline
+                                    the entire process in order to achieve success and to meet our goals.</div>
                                 <div class="author-info">
                                 	<div class="author-inner">
                                         <h3>Sujeevan</h3>
@@ -820,7 +827,8 @@
                             	<div class="quote-icon">
                                 	<span class="icon flaticon-straight-quotes"></span>
                                 </div>
-                                <div class="text">We started working with Viral Grow Marketing solutions from their establishment and they have been amazing. The success we have undergone year over has strengthened our position in Appareal’s Market.</div>
+                                <div class="text">We started working with Viral Grow Marketing solutions from their establishment and they have been amazing.
+                                    The success we have undergone year over has strengthened our position in Appareal’s Market.</div>
                                 <div class="author-info">
                                 	<div class="author-inner">
                                         <h3>Shoumita</h3>
@@ -837,7 +845,9 @@
                             	<div class="quote-icon">
                                 	<span class="icon flaticon-straight-quotes"></span>
                                 </div>
-                                <div class="text">Viral Grow Marketing Solutions has been very helpful in increasing our online visibility by ranking more than Seventy Keywords on Google Search Engine. I am really impressed with their sincere client service.The team of Viral Groww is Professional and responsive.</div>
+                                <div class="text">Viral Grow Marketing Solutions has been very helpful in increasing our online visibility by ranking more
+                                    than Seventy Keywords on Google Search Engine. I am really impressed with their sincere client service.The team of
+                                    Viral Groww is Professional and responsive.</div>
                                 <div class="author-info">
                                 	<div class="author-inner">
                                         <h3>Sampat</h3>
@@ -857,7 +867,7 @@
 
     <div class="container text-center" style="margin-top:30px; margin-bottom:30px;">
 
-         <a href="#" class="theme-btn btn-style-one">Like our Website? Get one for you now.<br> Click Here</a>
+         <a href="/design-website" class="theme-btn btn-style-one">Like our Website? Get one for you now.<br> Click Here</a>
     </div>
     <!--End Testimonial Section-->
     

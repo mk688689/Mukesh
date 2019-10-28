@@ -1,3 +1,5 @@
+from email.message import EmailMessage
+
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
@@ -5,6 +7,7 @@ from django.views.generic import TemplateView
 from newsletter.models import Signup, ContactPage, QuotePage, InquiryPage
 from newsletter.forms import EmailSignUpForm, ContactForm, QuoteForm, InquiryForm
 from django.core.mail import send_mail, BadHeaderError
+from .models import Blog
 
 
 def home_view(request):
@@ -434,3 +437,14 @@ def social_media_view(request):
 
 def book_call_view(request):
     return render (request, 'book-call.html')
+
+
+def blog_view(request):
+    post = Blog.objects.all()
+    return render(request, 'blog.html', {'post':post})
+
+
+def blog_detail_view(request, id):
+    data = Blog.objects.get(id=id)
+    return render(request, 'post-details.html', {'data':data})
+

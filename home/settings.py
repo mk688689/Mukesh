@@ -133,6 +133,9 @@ STATICFILES_DIRS = (
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # MAILCHIMP_API_KEY = "a2c7ab449510273a9e92f16c3e7c98fb-us4"
 MAILCHIMP_API_KEY = "faffd41c79ac9f03fe74c053e1ade838-us20"
 MAILCHIMP_DATA_CENTER = "us4"

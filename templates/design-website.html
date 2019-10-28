@@ -203,7 +203,7 @@ font-size:18px; color:black; margin-top:15px;
             	<div class="inner-container">
                     <ul class="bread-crumb">
                         <li><a href="{% url 'home' %}">Home</a></li>
-                        <li>Contact Us</li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -387,22 +387,22 @@ font-size:18px; color:black; margin-top:15px;
 <!--End Google Map APi-->
 <script>
     $(document).ready(function() {
-  $('#show-hidden-menu').click(function() {
+  $('#show-hidden-menu').focus(function() {
     $('.hidden-menu').slideToggle("medium");
   });
 
-   $('#show-hidden-menu1').click(function() {
+   $('#show-hidden-menu1').focus(function() {
     $('.hidden-menu1').slideToggle("medium");
   });
 
-     $('#show-hidden-menu2').click(function() {
+     $('#show-hidden-menu2').focus(function() {
     $('.hidden-menu2').slideToggle("medium");
   });
 
-    $('#show-hidden-menu3').click(function() {
+    $('#show-hidden-menu3').focus(function() {
     $('.hidden-menu3').slideToggle("medium");
   });
-      $('#show-hidden-menu4').click(function() {
+      $('#show-hidden-menu4').focus(function() {
     $('.hidden-menu4').slideToggle("medium");
   });
 });

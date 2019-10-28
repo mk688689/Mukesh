@@ -203,7 +203,7 @@ font-size:18px; color:black; margin-top:15px;
             	<div class="inner-container">
                     <ul class="bread-crumb">
                         <li><a href="{% url 'home' %}">Home</a></li>
-                        <li>Contact Us</li>
+                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -217,34 +217,35 @@ font-size:18px; color:black; margin-top:15px;
          <h3 class="wow slideInLeft hvr-glow " id="help_head" data-wow-duration="500ms" data-wow-delay="400ms" >You are just five Clicks away to resolve your Marketing Queries. </h3>
         <div class="col-lg-10 col-md-10  offset-md-1" id="help-content">
         <p  class=" wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">Hey, What's your good name?</p>
-            <form>
+            <form action="" method="post">
+                {% csrf_token %}
            <div class="form-group">
-                    <input type="text" name="name" id="show-hidden-menu"  class="form-control  wow fadeInUp hvr-Outline Out"  data-wow-duration="1.3s" data-wow-delay="1.3s" placeholder="Enter Your Good Name">
+                    <input type="text" name='name' id="show-hidden-menu"  class="form-control  wow fadeInUp hvr-Outline Out"  data-wow-duration="1.3s" data-wow-delay="1.3s" placeholder="Enter Your Good Name">
                 </div>
             <div class="hidden-menu" style="display:none;">
             <p> Can I please get your Email ID & Phone Number?</p>
               <div class="form-group">
-                    <input type="text" name="name"  id="show-hidden-menu1"  class="form-control" placeholder="Enter Your Email/Phone">
+                    <input type="text" name='email'  id="show-hidden-menu1"  class="form-control" placeholder="Enter Your Email/Phone">
                 </div>
                 </div>
 
                  <div class="hidden-menu1" style="display:none;">
             <p> What's the name of your Brand or Company?</p>
               <div class="form-group">
-                    <input type="text" name="name"  id="show-hidden-menu2"   class="form-control" placeholder="Enter Your Brand Name ">
+                    <input type="text" name='brand_name'  id="show-hidden-menu2"   class="form-control" placeholder="Enter Your Brand Name ">
                 </div>
                 </div>
                 <div class="hidden-menu2" style="display:none;">
                     <p>What's Your Goal?</p>
               <div class="form-group">
-                    <input type="text" name="name" id="show-hidden-menu3"  class="form-control" placeholder="Enter Your Goal ">
+                    <input type="text" name='goal' id="show-hidden-menu3"  class="form-control" placeholder="Enter Your Goal ">
                 </div>
                 </div>
 
         <div class="hidden-menu3" style="display:none;">
                      <p>You started "BRAND/COMPANY" in which year?</p>
               <div class="form-group">
-                    <input type="text" name="name" id="show-hidden-menu4"  class="form-control" placeholder="Enter Your Started Year ">
+                    <input type="text" name='year' id="show-hidden-menu4"  class="form-control" placeholder="Enter Your Started Year ">
                 </div>
                 </div>
 
@@ -253,9 +254,6 @@ font-size:18px; color:black; margin-top:15px;
                    <button type="submit"  class="btn btn-primary" id="btn_submit">Submit</button>
                 </div>
                 </div>
-
-
-
 
         </div>
 
@@ -393,22 +391,22 @@ font-size:18px; color:black; margin-top:15px;
 <!--End Google Map APi-->
 <script>
     $(document).ready(function() {
-  $('#show-hidden-menu').click(function() {
+  $('#show-hidden-menu').focus(function() {
     $('.hidden-menu').slideToggle("medium");
   });
 
-   $('#show-hidden-menu1').click(function() {
+   $('#show-hidden-menu1').focus(function() {
     $('.hidden-menu1').slideToggle("medium");
   });
 
-     $('#show-hidden-menu2').click(function() {
+     $('#show-hidden-menu2').focus(function() {
     $('.hidden-menu2').slideToggle("medium");
   });
 
-    $('#show-hidden-menu3').click(function() {
+    $('#show-hidden-menu3').focus(function() {
     $('.hidden-menu3').slideToggle("medium");
   });
-      $('#show-hidden-menu4').click(function() {
+      $('#show-hidden-menu4').focus(function() {
     $('.hidden-menu4').slideToggle("medium");
   });
 });

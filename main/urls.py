@@ -17,10 +17,10 @@ urlpatterns = [
     path ('ppc-company-in-delhi/', ppc_view, name="ppc"),
     path ('logo-designing-company-in-delhi', logo_design_view, name="logo"),
     path ('get-a-quote/', quote_view, name="quote"),
-    path ('seo-company-in-delhi/', seo_view, name="seo"),
-    path ('smo-company-in-delhi/', smo_view, name="smo"),
+    path ('seo-services/', seo_view, name="seo"),
+    path ('smo-services/', smo_view, name="smo"),
     path ('video-editing-services-delhi/', video_editing_view, name="video"),
-    path ('website-design-and-development/', web_development_view, name="web"),
+    path ('website-design-and-development-services/', web_development_view, name="web"),
     path ('partner/', partner_view, name="partner"),
     path ('policy/', policy_view, name="policy"),
     path ('terms-condition/', terms_condition_view, name="terms"),
@@ -29,5 +29,6 @@ urlpatterns = [
     path ('design-website/', design_view, name="design-website"),
     path ('social-media/', social_media_view, name="social-media"),
     path ('book-call/', book_call_view, name="book-call"),
-
+    path ('blog/', blog_view, name="blog"),
+    path ('blog-detail/<int:id>', blog_detail_view, name="blog-detail"),
 ]
