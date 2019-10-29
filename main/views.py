@@ -85,9 +85,10 @@ def contact_view(request):
                 new_contact.from_email = contact_form.cleaned_data['from_email']
                 new_contact.message = contact_form.cleaned_data['message']
                 new_contact.save ()
+
                 try:
                     send_mail (new_contact.subject, new_contact.from_email, new_contact.message,
-                               ['tusharjain060@gmail.com'])
+                               ['mk688689@gmail.com'])
                 except BadHeaderError:
                     return HttpResponse ('Invalid Header Found')
                 return redirect ('success')
@@ -420,6 +421,19 @@ def web_development_view(request):
 
 
 def help_view(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        brand_name = request.POST['brand_name']
+        goal = request.POST['goal']
+        year = request.POST['year']
+
+    #     try:
+    #         send_mail (name, email, ['mk688689@gmail.com'])
+    #     except BadHeaderError:
+    #         return HttpResponse ('Invalid Header Found')
+    #     return redirect ('success')
+    #
     return render (request, 'help.html')
 
 

@@ -59,11 +59,11 @@
                                 <ul class="navigation clearfix">
                                     <li><a href="{% url 'home' %}">Home</a>
                                     </li>
-                                    <li class="dropdown"><a href="#">Services</a>
+                                    <li class="dropdown"><a href="{% url 'digital' %}"  target="_blank" >Services</a>
                                         <ul>
-                                            <li><a href="{% url 'web' %}">Website Design & Development</a></li>
-                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
-                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                            <li><a href="{% url 'web' %}"  target="_blank" >Website Design & Development</a></li>
+                                            <li><a href="{% url 'seo' %}"  target="_blank" >Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}"  target="_blank" >Social Media Optimization</a></li>
 <!--                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>-->
 <!--                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>-->
 <!--                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>-->
@@ -81,15 +81,15 @@
                                             <li><a href="{% url 'video' %}">Video Editing</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{% url 'about' %}">About us</a>
+                                    <li><a href="{% url 'about' %}"  target="_blank" >About us</a>
 <!--                                        <ul>-->
 <!--                                            <li><a href="{% url 'about' %}">About Us</a></li>-->
 <!--                                        </ul>-->
                                     </li>
-                                     <li><a href="{% url 'blog' %}">Blog</a></li>
+                                     <li><a href="{% url 'blog' %}"  target="_blank" >Blog</a></li>
                                     <!-- <li><a href="price.html">Pricing</a></li> -->
                                     <!-- <li><a href="#">Jobs</a></li> -->
-                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'contact' %}"  target="_blank" >Contact</a></li>
                                  </ul>
                             </div>
                         </nav>
@@ -97,7 +97,7 @@
 
                         <!--Outer Box-->
                         <div class="outer-box">
-                            <a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let’s Groww Your Business? </a>
+                            <a href="{% url 'help' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let’s Groww Your Business? </a>
                         </div>
 
                     </div>
@@ -242,7 +242,8 @@
                             <div class="widget-content">
                                 <div class="text">Join us to receive latest Updates <br> News and Offers.</div>
                                 <div class="subscribe-form">
-                                    <form method="post" action="#">
+                                    <form method="post" action="{% url 'subscribe' %}">
+                                         {% csrf_token %}
                                         <div class="form-group">
                                             <input type="email" name="email" value="" placeholder="Email Address..." required="">
                                             <button type="submit" class="theme-btn"><span class="flaticon-right-arrow-1"></span></button>
@@ -250,11 +251,11 @@
                                     </form>
                                 </div>
                                <ul class="social-icon-one">
-                                    <li><a href="https://www.facebook.com/viralgroww"><span class="fa fa-facebook-f"></span></a></li>
-                                    <li><a href="https://twitter.com/GrowwViral"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="https://www.linkedin.com/company/viral-groww-marketing-solutions"><span class="fa fa-linkedin"></span></a></li>
-                                    <li><a href="https://www.instagram.com/viralgroww/"><span class="fa fa-instagram"></span></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCuD7vxBIcbMyBn8FQMIcESw"><span class="fa fa-youtube"></a></li>
+                                    <li><a href="https://www.facebook.com/viralgroww" target="_blank"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="https://twitter.com/GrowwViral" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/viral-groww-marketing-solutions" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="https://www.instagram.com/viralgroww/" target="_blank"><span class="fa fa-instagram"></span></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCuD7vxBIcbMyBn8FQMIcESw" target="_blank"><span class="fa fa-youtube"></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -278,6 +279,16 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div style="margin-top:20px;">
+                                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                              <input type="hidden" name="cmd" value="_s-xclick">
+                                              <input type="hidden" name="hosted_button_id" value="GLK7BKX6PQDZN">
+                                              <input type="image" src="https://imgssl.constantcontact.com/kb/ThirdParty/paypal-buy-now-button.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                       </form>
+
+                                     </div>
                         </div>
                     </div>
 

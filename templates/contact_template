@@ -1,0 +1,6 @@
+Contact Name:
+{{ name }}
+
+Email:
+{{ from_email }}
+

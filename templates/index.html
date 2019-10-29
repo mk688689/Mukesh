@@ -94,7 +94,7 @@
 
                         <!--Outer Box-->
                         <div class="outer-box">
-                            <a href="{% url 'quote' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let’s Groww Your Business?</a>
+                            <a href="{% url 'help' %}" class="theme-btn btn-style-one" target="_blank"> <span class="icon flaticon-right-arrow-1"></span> Let’s Groww Your Business?</a>
                         </div>
 
                     </div>
@@ -130,11 +130,11 @@
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="current"><a href="{% url 'home' %}">Home</a></li>
-                                    <li class="dropdown"><a href="#">Services</a>
+                                    <li class="dropdown"><a href="{% url 'digital'%}"  target="_blank" >Services</a>
                                     	<ul>
-                                             <li><a href="{% url 'web' %}">Website Design & Development</a></li>
-                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
-                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>
+                                             <li><a href="{% url 'web' %}"  target="_blank" >Website Design & Development</a></li>
+                                            <li><a href="{% url 'seo' %}"  target="_blank" >Search Engine Optimization</a></li>
+                                            <li><a href="{% url 'smo' %}"  target="_blank" >Social Media Optimization</a></li>
 <!--                                            <li><a href="{% url 'digital' %}">Digital Marketing</a></li>-->
 <!--                                            <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>-->
 <!--                                            <li><a href="{% url 'smo' %}">Social Media Optimization</a></li>-->
@@ -152,9 +152,9 @@
                                             <li><a href="{% url 'video' %}">Video Editing</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{% url 'about' %}">About Us</a></li>
-                                        <li><a href="{% url 'blog' %}">Blog</a></li>
-                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'about' %}"  target="_blank" >About Us</a></li>
+                                        <li><a href="{% url 'blog' %}"  target="_blank" >Blog</a></li>
+                                    <li><a href="{% url 'contact' %}"  target="_blank" >Contact</a></li>
                                  </ul>
                             </div>
                         </nav>
@@ -241,7 +241,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="btns-box">
-                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
+                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one" target="_blank"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
                         </div>
                     </div>
                     
@@ -325,7 +325,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="btns-box">
-                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
+                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one" target="_blank"> <span class="icon flaticon-right-arrow-1"></span> Let's Talk?</a>
                         </div>
                     </div>
                     
@@ -407,7 +407,7 @@
                     data-textalign="['top','top','top','top']"
                     data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                     	<div class="btns-box">
-                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one"> <span class="icon flaticon-right-arrow-1"></span>Let's Talk?</a>
+                    		<a href="{% url 'contact' %}" class="theme-btn btn-style-one" target="_blank"> <span class="icon flaticon-right-arrow-1"></span>Let's Talk?</a>
                         </div>
                     </div>
                     
@@ -581,7 +581,7 @@
                     <div class="featured-block-two col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="icon-box">
-                                <span class="icon"><img src="{% static 'images/icons/featured-icon-4.png' %}" alt="" /></span>
+                                <a href="{% url 'web' %}"><span class="icon"><img src="{% static 'images/icons/featured-icon-4.png' %}" alt="" /></span></a>
                             </div>
                             <h3>Responsive Web Design & Development</h3>
                             <div class="text">We develop User-friendly & SEO Optimized Websites that stand out from the Crowd!
@@ -591,9 +591,9 @@
                             <div class="overlay-box">
                             	<div class="overlay-inner">
                                 	<div class="overlay-icon-box">
-                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-4.png' %}" alt="" /></span>
+                                        <a href="{% url 'web' %}"><span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-4.png' %}" alt="" /></span></a>
                                     </div>
-                                    <h3><a href="{% url 'quote' %}">Responsive Web Design & Development</a></h3>
+                                    <h3><a href="{% url 'web' %}">Responsive Web Design & Development</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -610,9 +610,9 @@
                             <div class="overlay-box">
                             	<div class="overlay-inner">
                                 	<div class="overlay-icon-box">
-                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-5.png' %}" alt="" /></span>
+                                        <a href="{% url 'brand' %}"><span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-5.png' %}" alt="" /></span></a>
                                     </div>
-                                    <h3><a href="{% url 'quote' %}">Designing that stands out</a></h3>
+                                    <h3><a href="{% url 'brand' %}">Designing that stands out</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -630,9 +630,9 @@
                             <div class="overlay-box">
                             	<div class="overlay-inner">
                                 	<div class="overlay-icon-box">
-                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-6.png' %}" alt="" /></span>
+                                        <a href="{% url 'seo' %}"><span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-6.png' %}" alt="" /></span></a>
                                     </div>
-                                    <h3><a href="{% url 'quote' %}">Get Better Rankings of Your Keywords</a></h3>
+                                    <h3><a href="{% url 'seo' %}">Get Better Rankings of Your Keywords</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -649,9 +649,9 @@
                             <div class="overlay-box">
                             	<div class="overlay-inner">
                                 	<div class="overlay-icon-box">
-                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-7.png' %}" alt="" /></span>
+                                        <a href="{% url 'social-media' %}"><span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-7.png' %}" alt="" /></span></a>
                                     </div>
-                                    <h3><a href="{% url 'quote' %}">Social Media Marketing for Business</a></h3>
+                                    <h3><a href="{% url 'social-media' %}">Social Media Marketing for Business</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -668,9 +668,9 @@
                             <div class="overlay-box">
                             	<div class="overlay-inner">
                                 	<div class="overlay-icon-box">
-                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-8.png' %}" alt="" /></span>
+                                        <a href="{% url 'book-call' %}"><span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-8.png' %}" alt="" /></span></a>
                                     </div>
-                                    <h3><a href="{% url 'quote' %}">Better Conversion</a></h3>
+                                    <h3><a href="{% url 'book-call' %}">Better Conversion</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -689,9 +689,9 @@
                             <div class="overlay-box">
                             	<div class="overlay-inner">
                                 	<div class="overlay-icon-box">
-                                    	<span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-9.png' %}" alt="" /></span>
+                                        <a href="{% url 'contact' %}"><span class="overlay-icon"><img src="{% static 'images/icons/featured-icon-9.png' %}" alt="" /></span></a>
                                     </div>
-                                    <h3><a href="{% url 'quote' %}">Creative Reporting</a></h3>
+                                    <h3><a href="{% url 'contact' %}">Creative Reporting</a></h3>
                                 </div>
                             </div>
                         </div>
@@ -986,6 +986,8 @@
                                             <li><a href="#services">Our Services</a></li>
                                             <li><a href="#">Why Choose Us</a></li>
                                             <li><a href="#">FAQ’s</a></li>
+
+
                                         </ul>
                                     </div>
                                     <div class="widget-column col-md-6 col-sm-6 col-xs-12">
@@ -1027,11 +1029,11 @@
                                     {% endif %}
                                 </div>
                                 <ul class="social-icon-one">
-                                    <li><a href="https://www.facebook.com/viralgroww"><span class="fa fa-facebook-f"></span></a></li>
-                                    <li><a href="https://twitter.com/GrowwViral"><span class="fa fa-twitter"></span></a></li>
-                                    <li><a href="https://www.linkedin.com/company/viral-groww-marketing-solutions"><span class="fa fa-linkedin"></span></a></li>
-                                    <li><a href="https://www.instagram.com/viralgroww/"><span class="fa fa-instagram"></span></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCuD7vxBIcbMyBn8FQMIcESw"><span class="fa fa-youtube"></span></a></li>
+                                    <li><a href="https://www.facebook.com/viralgroww" target="_blank"><span class="fa fa-facebook-f"></span></a></li>
+                                    <li><a href="https://twitter.com/GrowwViral" target="_blank"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="https://www.linkedin.com/company/viral-groww-marketing-solutions" target="_blank"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="https://www.instagram.com/viralgroww/"><span class="fa fa-instagram" target="_blank"></span></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCuD7vxBIcbMyBn8FQMIcESw" target="_blank"><span class="fa fa-youtube"></span></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -1055,6 +1057,17 @@
                                     </div>
                                 </div>
                             </div>
+                               <div style="margin-top:20px;">
+                                     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                              <input type="hidden" name="cmd" value="_s-xclick">
+                                              <input type="hidden" name="hosted_button_id" value="GLK7BKX6PQDZN">
+                                              <input type="image" src="https://imgssl.constantcontact.com/kb/ThirdParty/paypal-buy-now-button.png" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                                            <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                                       </form>
+
+                                     </div>
+
+
                         </div>
                     </div>
 
