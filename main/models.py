@@ -9,3 +9,5 @@ class Blog(models.Model):
     message = models.TextField(default="")
     description = models.TextField()
     posted_date = models.DateField(default=date.today)
+
+

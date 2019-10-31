@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from django.conf import settings
 from newsletter.forms import EmailSignUpForm
-from .models import Signup
+from .models import Signup, ContactPage
 import json
 import requests
 from django.core.mail import send_mail, BadHeaderError
@@ -44,3 +44,51 @@ def email_list_signup(request):
                 subscribe (form.instance.email)
                 form.save ()
         return HttpResponseRedirect (request.META.get ("HTTP_REFERER"))
+
+
+def contact(request):
+    if request.method == 'POST':
+        if 'message' in request.POST:
+            bb = ContactPage()
+            bb.name = request.POST['name']
+            bb.email = request.POST['email']
+            bb.subject = request.POST['subject']
+            bb.message = request.POST['message']
+            bb.save ()
+            subject = "viralgroww Subject " + request.POST['subject']
+            message = "  Name:  " + request.POST['name'] + "\n Email-ID:  " + request.POST[
+                'email'] + "\n Message:  " + request.POST['message']
+            user = "mk688689@gmail.com"
+            res = send_mail (subject, message, user, ['mk688689@gmail.com'], fail_silently=True)
+            return redirect ('contact')
+
+    return render (request, 'contact.html')
+
+#
+# def index(request):
+#     if request.method == 'POST':
+#         if 'name' in request.POST:
+#             db1 = Admission_form ()
+#             db1.name = request.POST['name']
+#             db1.email = request.POST['email']
+#             db1.phone = request.POST['phone']
+#             db1.course = request.POST['course']
+#             db1.address = request.POST['address']
+#             db1.save ()
+#             subject = "Admission form for course  " + request.POST['course']
+#             message = " Student's Name:  " + request.POST['name'] + "\n Email-ID:  " + request.POST[
+#                 'email'] + "\n Phone Number:  " + request.POST['phone'] + "\n For Course:  " + request.POST[
+#                           'course'] + "\n Address:  " + request.POST['address']
+#             user = "mk688689@gmail.com"
+#             res = send_mail (subject, message, user, ['mk688689@gmail.com'], fail_silently=True)
+#             return redirect ('index')
+#         elif 'email1' in request.POST:
+#             nl = gettouch ()
+#             nl.name1 = request.POST['name1']
+#             nl.email1 = request.POST['email1']
+#             nl.save ()
+#             return redirect ('index')
+#         else:
+#             print ('Errors')
+#             return render (request, '')
+#         return render (request, 'index.html')

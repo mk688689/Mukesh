@@ -427,13 +427,13 @@ def help_view(request):
         brand_name = request.POST['brand_name']
         goal = request.POST['goal']
         year = request.POST['year']
-
-    #     try:
-    #         send_mail (name, email, ['mk688689@gmail.com'])
-    #     except BadHeaderError:
-    #         return HttpResponse ('Invalid Header Found')
-    #     return redirect ('success')
-    #
+        subject = "I Need Help With Marketing" + request.POST['name']
+        message = "  Name:  " + request.POST['name'] + "\n Email-ID:  " + request.POST[
+            'email'] + "\n Brand_Name:  " + request.POST[
+                      'brand_name'] + "\n goal:  " + request.POST['goal'] + "\n year:  " + request.POST['year']
+        user = "mk688689@gmail.com"
+        res = send_mail (subject, message, user, ['mk688689@gmail.com'], fail_silently=True)
+        return redirect ('help')
     return render (request, 'help.html')
 
 

@@ -13,16 +13,17 @@ class EmailSignUpForm(forms.ModelForm):
 		model = Signup
 		fields = ('email', )
 
+
 class ContactForm(forms.ModelForm):
 	name = forms.CharField(required=False, widget=forms.TextInput(attrs={
 		"type": "text",
-		"name": "username",
+		"name": "name",
 		"placeholder": "Name",
 		"required": "True"
 		}), label="")
 	from_email = forms.EmailField(required=False, widget=forms.TextInput(attrs={
 		"type": "email",
-		"name": "email_contact",
+		"name": "email",
 		"placeholder": "Email",
 		"required": "True"
 		}), label="")

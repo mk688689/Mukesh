@@ -7,6 +7,7 @@ class Signup(models.Model):
 	def __str__(self):
 		return self.email
 
+
 class ContactPage(models.Model):
 	name = models.CharField(max_length=100)
 	from_email = models.EmailField()
@@ -15,6 +16,7 @@ class ContactPage(models.Model):
 
 	def __str__(self):
 		return self.name
+
 
 class QuotePage(models.Model):
 	name = models.CharField(max_length=100)
