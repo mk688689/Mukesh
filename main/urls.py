@@ -22,6 +22,7 @@ urlpatterns = [
     path ('video-editing-services/', video_editing_view, name="video"),
     path ('website-design-and-development-services/', web_development_view, name="web"),
     path ('partner/', partner_view, name="partner"),
+    path ('local-partner/', local_partner_view, name="local-partner"),
     path ('policy/', policy_view, name="policy"),
     path ('terms-condition/', terms_condition_view, name="terms"),
     path ('help/', help_view, name="help"),

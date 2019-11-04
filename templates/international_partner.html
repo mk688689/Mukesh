@@ -26,7 +26,15 @@
              border-radius: 100px;}
          #more {display: none;}
          .menu_list{padding-left:20px;}
-         .menu_list li{list-style: disc;}
+         .menu_list li{list-style: disc; color:black;}
+         #international p{font-size:18px; color:#000000c4;}
+         #partner-logo{margin-top: -86px; height: 200px;}
+         @media(max-width:768px){
+           #partner-logo img{width: 200px;position: relative; top: 85%;}
+           #international #first{margin-top:110px;}
+         }
+
+
          </style>
         {% endblock %}
   {% block content %}
@@ -56,11 +64,27 @@
 <!--</div>-->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 a animated slideInLeft delay-2s">
-            <img src="{% static 'images/partners/africa.png'%}">
-        </div>
+<!--        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 a animated slideInLeft delay-2s">-->
+<!--            <img src="{% static 'images/partners/africa.png'%}">-->
+<!--        </div>-->
+         <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12" style="margin-top:86px;">
+                	<aside class="sidebar services-sidebar">
+
+                        <div class="sidebar-title">
+                            <h2 class="text-center">Our Partners</h2>
+                        </div>
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <ul class="blog-cat-two">
+                                <li><a href="{% url 'local-partner' %}">Local Partners</a></li>
+                                <li class="active"><a href="{% url 'partner' %}">International Partners</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
         <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 animated slideInRight delay-2s" id="international">
-            <p class="text-justify"> Nigeria is an African Country on the Gulf of Guinea.<b> Mr. Oluwaseun Ambassador</b>,
+            <div class="col-lg-4" id="partner-logo"> <img src="{% static 'images/partners/africa.png'%}"></div>
+            <p class="text-justify" id="first">  Nigeria is an African Country on the Gulf of Guinea.<b> Mr. Oluwaseun Ambassador</b>,
                 our International Local Business Partner from Nigeria, has signed a deal with us, in order to help Business Owners in Nigeria,
                 to leverage on the power of the internet, to take their businesses to the next level.</p>
             <p class="text-justify">Our company -<b> Viral Groww & African Business Machine</b>, is working together to help companies based in Nigeria,

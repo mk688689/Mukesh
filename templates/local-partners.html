@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% block title %} Viral Groww International Partners {% endblock %}
+  {% block meta %}
+  <meta name="description" content="Our company- Viral Groww and The African Business Machine is working together to  help companies based in Nigeria with the Marketing aspect for their respective businesses.">
+  <meta name="keywords" content="Best Digital Marketing company in Nigeria | Affordable Digital company in Nigeria | Affordable Digital Marketing packages in Nigeria | SEO Services in Nigeria">
+
+  {% endblock %}
+    {% block css %}
+<style>
+.body{background-color:#fffbfb;}
+        #part{padding-left:0px; padding-right:0px; margin-top:0px;}
+        #part img{width:100%; height:390px; opacity:0.9;}
+        #international{margin-top:80px; margin-bottom:50px;
+}}
+
+        @media(max-width:768px){
+          #international{margin-top: -80px; margin-bottom: 30px;}
+        }
+        @media(max-width:768px)
+        {
+         #part{margin-top:0px; padding-left:0px; padding-right:0px;}
+         #part img{width:100%; height:auto;}
+         .a img{width:100%; height:auto;}
+         }
+         .btn-warning{color: #fff;
+            background-color: #ff4800;
+            border-color: #ff4800;
+             border-radius: 100px;}
+         #more {display: none;}
+         .menu_list{padding-left:20px;}
+         .menu_list li{list-style: disc; color:#000;}
+         #international p {font-size: 18px;
+    color:#000000c4;}
+        #international h3{color:black; font-weight:600; margin-top:20px;}
+         </style>
+        {% endblock %}
+  {% block content %}
+{% load static %}
+
+  <!--Page Title-->
+    <section class="page-title" style="background-image:url({% static 'images/background/partner.jpg' %});">
+        <div class="auto-container">
+            <h1>LOCAL PARTNERS</h1>
+        </div>
+        <!--Page Info-->
+        <div class="page-info">
+            <div class="auto-container">
+            	<div class="inner-container">
+                    <ul class="bread-crumb">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li>Local Partners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--End Page Info-->
+    </section>
+    <!--End Page Title-->
+
+<div class="container-fluid">
+    <div class="row">
+         <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12" style="margin-top:86px;">
+                	<aside class="sidebar services-sidebar">
+
+                        <div class="sidebar-title">
+                            <h2 class="text-center">Our Partners</h2>
+                        </div>
+                        <!--Blog Category Widget-->
+                        <div class="sidebar-widget sidebar-blog-category">
+                            <ul class="blog-cat-two">
+                                 <li class="active"><a href="{% url 'local-partner' %}">Local Partners</a></li>
+                                <li ><a href="{% url 'partner' %}">International Partners</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 animated slideInRight delay-2s" id="international">
+            <p class="text-justify">The book - Rich Dad & Poor Dad by Mr. Robert Kiyosaki describes JOB as "Just Over Broke."
+                At times individuals’ dream of business opportunities, but the funds are not always enough to run the entrepreneurial journey.
+                We at Viral Groww understand that gone are those days when a business had to promote themselves on Billboards’,
+                Pamphlets, or any other Print Medium. It's the Digital Era.
+           </p>
+            <h3>Digital Marketing is the new trend.</h3>
+
+
+            <p class="text-justify"> Viral Groww - A Group of Colinkers Event Management Pvt Ltd understands the need for Digital Marketing Professionals in tier 2 & tier 3 cities.
+                To make every small & medium scale enterprise digitally viral on the web, we tend to establish ourselves all over the Indian Sub-Continent. We are open to partner with like-minded people across the globe. Our team has a very lucrative business proposal for individuals looking to set up their businesses.
+
+</p>
+            <h3>What's there for you?</h3>
+            <p class="text-justify"> We at Viral Groww - A Group of Colinkers Event Management Pvt Ltd, has already established a brand name with a client portfolio from all across the globe.
+                You will be working with experienced Service Providers in this sector with extensive experience of </p>
+            <p class="text-justify">
+                <ul class="menu_list">
+            <li>A Brand New Website & Local Marketing Support from the Head Offices of Viral Groww,</li>
+            <li>Local Branding Training & Consultation,</li>
+            <li>Real-Time Client Service Update Portal for your Branch,</li>
+            <li>Real-Time Client Payment Clearance for your Branch,</li>
+            <li>Training & Reference Building, </li>
+            <li>Time to Time Visit by HQ Senior Executives,</li>
+            <li>You are free to do Branding & Promotions as per your Goals,</li>
+            <li>Client Handling Assistance,</li>
+            <li>Preparing Client Case Study,</li>
+            <li>On-time Service Delivery,</li>
+            <li>Assistance for Email Marketing for your Branch,</li>
+            <li>Indirectly You Will Be The Owner of a Private Limited Company.</li>
+        </ul>
+            </p>
+            <p class="text-justify" style="margin-top:30px;">Everything comes at some cost, so you need to invest in getting the best product.
+                As these business decisions are not made by just reading our the content from a website we need to work out more on  </p>
+            <p class="text-justify">
+                <ul class="menu_list">
+            <li>Your Future Goals,</li>
+            <li>Your Vision,</li>
+            <li>Your Basic Requirements to Start with,</li>
+        </ul>
+            </p>
+              <p class="text-justify">
+               We ought to be on the same page & have an understanding between both the parties to take this business ahead.
+                  We aim to help people who need such services to Groww their business locally, nationally, or internationally.
+                Let's discuss this?
+            </p>
+
+    <!--Quote Section-->
+<!--    <section class="quote-section">-->
+<!--    	<div class="auto-container">-->
+<!--        	<div class="row clearfix">-->
+
+<!--                &lt;!&ndash;Quote Form Column&ndash;&gt;-->
+<!--                <div class="quote-form-column col-md-8 col-sm-12 col-xs-12">-->
+<!--                	<div class="inner-column">-->
+
+<!--                        &lt;!&ndash;Quote Form&ndash;&gt;-->
+<!--                        <div class="quote-form">-->
+<!--                            <form method="post">-->
+<!--                                {% csrf_token %}-->
+<!--                                <div class="row clearfix">-->
+<!--                                    <div class="column col-md-6 col-sm-6 col-xs-12">-->
+<!--                                        <div class="form-group">-->
+<!--                                            {{ quote_form.name }}-->
+
+<!--                                             <input type="text" name="username" placeholder="Name*" required>-->
+<!--                                        </div>-->
+<!--                                        <div class="form-group">-->
+<!--                                            {{ quote_form.quote_email }}-->
+<!--                                             <input type="email" name="email" placeholder="Email*" required>-->
+<!--                                        </div>-->
+<!--                                        <div class="form-group">-->
+<!--                                            {{ quote_form.website }}-->
+<!--                                             <input type="text" name="website" placeholder="Subject" required>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+
+<!--                                    <div class="column col-md-6 col-sm-6 col-xs-12">-->
+<!--                                    	<div class="form-group">-->
+<!--                                            {{ quote_form.service }}-->
+<!--                                            &lt;!&ndash; <select class="custom-select-box">-->
+<!--                                                <option>Social Media Marketing</option>-->
+<!--                                                <option>Website Development</option>-->
+<!--                                                <option>SEO & Website Development</option>-->
+<!--                                                <option>SEO, SMO & Website Development</option>-->
+<!--                                                <option>I want to talk to your executive.</option>-->
+<!--                                            </select> &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                        <div class="form-group">-->
+<!--                                            {{ quote_form.message }}-->
+<!--                                             <textarea name="message" placeholder="Your Message (Optional)"></textarea>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="column btn-column col-md-12 col-sm-12 col-xs-12">-->
+<!--                                        <div class="form-group">-->
+<!--                                            <button class="theme-btn btn-style-one" type="submit" name="submit-form">Submit</button>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                            </form>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+        </div>
+    </div>
+</div>
+
+
+    <!--End Quote Section-->
+
+{% block js%}
+
+{% endblock %}
+{% endblock %}
+

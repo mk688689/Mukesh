@@ -12,7 +12,10 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import django_heroku
 import os
-import dj_database_url
+import pymysql
+
+pymysql.install_as_MySQLdb()
+
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '5&huo_#mj+emu_3z_btexbeqr1ux@(kgqeop-3!r0le5_c^b-r'
@@ -67,17 +70,16 @@ WSGI_APPLICATION = 'home.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 DATABASES = {
-     'default': dj_database_url.config(
-         default='postgres://qnznmjw1.amazonaws.com:5432/d1q9rf8mbbdj2u',
-         conn_max_age=600)}
-
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME':'viralgroww',
+        'USER': 'root',
+        'PASSWORD':'',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -151,7 +153,7 @@ MAILCHIMP_EMAIL_LIST_ID = "08cb3308f3"
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'mk688689@gmail.com'
-EMAIL_HOST_PASSWORD = 'annumukesh'
+EMAIL_HOST_PASSWORD = 'mukesh@78091'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False

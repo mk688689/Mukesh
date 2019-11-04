@@ -107,6 +107,10 @@ def partner_view(request):
     return render (request, 'international_partner.html')
 
 
+def local_partner_view(request):
+    return render (request, 'local-partners.html')
+
+
 def policy_view(request):
     return render (request, 'privacy_policy.html')
 
